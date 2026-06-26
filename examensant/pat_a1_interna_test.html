@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TEMA 1 - Marc constitucional: principis, drets i deures fonamentals i les seves garanties | OpoGene</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-body: #ffffff;
+      --bg-card: #f9fafb; 
+      --accent: #dc2626;  
+      --dark: #000000;
+      --gray-light: #f3f4f6;
+      --border-color: #e5e7eb;
+      --text-main: #1f2937;
+      --text-dim: #6b7280;
+    }
+
+    body {
+      background-color: var(--bg-body);
+      color: var(--text-main);
+      font-family: 'Outfit', sans-serif;
+      margin: 0; padding: 20px;
+    }
+
+    .container { max-width: 800px; margin: 80px auto 40px; }
+
+    #back-button, #reset-test-button {
+      position: fixed; top: 15px; z-index: 2000;
+      padding: 10px 20px; border-radius: 8px;
+      cursor: pointer; font-weight: 700; border: none;
+      color: white; font-family: 'Outfit', sans-serif;
+      text-transform: uppercase; font-size: 0.75rem;
+      transition: 0.3s;
+    }
+    #back-button { left: 20px; background: var(--dark); }
+    #reset-test-button { left: 180px; background: var(--accent); }
+    #back-button:hover, #reset-test-button:hover { opacity: 0.9; transform: translateY(-2px); }
+
+    h1 { text-align: center; font-weight: 800; font-size: 2rem; color: var(--dark); margin-bottom: 25px; }
+    h1 span { color: var(--accent); }
+
+    .sticky-container {
+      position: sticky; top: 0; background: var(--bg-body);
+      z-index: 1000; padding: 15px 0;
+      border-bottom: 1px solid var(--border-color); margin-bottom: 25px;
+    }
+
+    .stats-container { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 12px; }
+    .left-group { display: flex; align-items: center; flex-grow: 1; gap: 20px; }
+    #response-counter { white-space: nowrap; font-weight: 800; font-size: 0.9rem; color: var(--dark); background: var(--gray-light); padding: 6px 14px; border-radius: 20px; }
+    #progress-bar { flex-grow: 1; height: 10px; background: var(--gray-light); border-radius: 10px; overflow: hidden; }
+    #progress { height: 100%; width: 0%; background: var(--dark); transition: 0.4s; }
+
+    .right-group { display: flex; gap: 8px; }
+    .stat-box { display: flex; align-items: center; gap: 8px; font-weight: 800; font-size: 0.9rem; padding: 6px 14px; border-radius: 20px; white-space: nowrap; }
+    .stat-correct { color: #ffffff; background: var(--dark); }
+    .stat-incorrect { color: #ffffff; background: var(--accent); }
+
+    .question { background: var(--bg-card); border: 1px solid var(--border-color); padding: 25px; border-radius: 12px; margin-bottom: 20px; transition: 0.3s; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+    .question h3 { font-size: 1.05rem; margin-bottom: 20px; color: var(--dark); }
+    
+    .answer { display: block; background: #ffffff; padding: 14px 18px; border-radius: 8px; margin-bottom: 10px; cursor: pointer; border: 1px solid var(--border-color); transition: 0.2s; }
+    .answer:hover { border-color: var(--dark); background: #fdfdfd; }
+    
+    .correct { background: #dcfce7 !important; border-color: #22c55e !important; color: #166534; }
+    .incorrect { background: #fee2e2 !important; border-color: var(--accent) !important; color: #166534; }
+
+    #submit { width: 100%; padding: 18px; border-radius: 12px; background: var(--dark); color: white; font-weight: 800; border: none; cursor: pointer; text-transform: uppercase; margin-top: 40px; }
+
+    #score { padding: 30px; border-radius: 12px; text-align: center; margin-bottom: 30px; font-weight: 800; font-size: 1.2rem; border: 2px solid var(--dark); }
+    
+    footer { text-align: center; margin-top: 60px; padding: 20px; color: var(--text-dim); }
+    .footer-text { font-weight: 600; color: #000; }
+    .footer-jomp { font-weight: 800; color: var(--accent); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <button id="back-button" onclick="window.location.href='../index.html'">⬅ Tornar</button>
+    <button id="reset-test-button" onclick="reiniciarTest()">🔄 Reset</button>
+
+    <h1>Exàmen PAT - A1<br><span>Escala Sup d'administració</span></h1>
+    
+    <div class="sticky-container">
+      <div class="stats-container">
+        <div class="left-group">
+          <div id="response-counter" class="stat-box">📄 Respostes: 0/40</div>
+          <div id="progress-bar"><div id="progress"></div></div>
+        </div>
+        <div class="right-group">
+          <div id="correct-counter" class="stat-box stat-correct">✅ Encerts: 0</div>
+          <div id="incorrect-counter" class="stat-box stat-incorrect">❌ Errors: 0</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="score" style="display: none;"></div>
+    <form id="test-form"></form>
+    <button id="submit">Finalitzar i Corregir</button>
+
+    <footer>
+      <span class="footer-text">© 2026 OpoGene | Creat per</span> <span class="footer-jomp">JOMP</span>
+    </footer>
+  </div>
+
+  <script src="pat_a1_interna_test.js"></script>
+</body>
+</html>

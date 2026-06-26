@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Fichas Oposiciones</title>
+    <link rel="stylesheet" href="test.css">
+    <style>
+        /* ==========================================================================
+           ESTILOS DEL TÍTULO DEL TEMA Y DISEÑO RESPONSIVE (BLANCO Y NEGRO)
+           ========================================================================== */
+        
+        /* Contenedor de navegación superior (Índex + Marcador) */
+        .top-navbar {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        /* Contenedor para agrupar los botones superiores */
+        .top-buttons-group {
+            display: flex;
+            gap: 10px;
+        }
+
+        /* Botón Volver al Índice y Estilo base para botones superiores */
+        .back-index-btn, .top-restart-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ffffff;
+            color: var(--text-main);
+            border: 1px solid var(--border-color);
+            border-bottom: 2px solid var(--text-main);
+            padding: 10px 16px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+
+        .back-index-btn:hover {
+            background-color: var(--text-main);
+            color: #ffffff;
+            border-color: var(--text-main);
+        }
+
+        /* Variación roja para el botón de reiniciar superior */
+        .top-restart-btn {
+            background-color: #dc3545;
+            color: #ffffff;
+            border: 1px solid #dc3545;
+            border-bottom: 2px solid #b21f2d;
+        }
+
+        .top-restart-btn:hover {
+            background-color: #bd2130;
+            border-color: #bd2130;
+            border-bottom-color: #7e121c;
+        }
+
+        /* Título del Tema Exterior (Encima de la ficha) */
+        .theme-header-container {
+            background: #ffffff;
+            border: 1px solid var(--border-color);
+            border-bottom: 3px solid var(--text-main);
+            border-radius: 10px 10px 0 0;
+            padding: 12px 20px;
+            margin-bottom: -1px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .theme-label {
+            font-size: 0.75rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--text-secondary);
+            margin-bottom: 2px;
+        }
+
+        .theme-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-main);
+            text-transform: uppercase;
+        }
+
+        .card.with-theme-above {
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+
+        /* ==========================================================================
+           MEDIA QUERIES (OPTIMIZACIÓN PARA MÓVILES / RESPONSIVE)
+           ========================================================================== */
+        
+        /* Para tabletas y móviles (Pantallas de menos de 768px) */
+        @media (max-width: 768px) {
+            body {
+                padding: 12px;
+            }
+
+            .top-navbar {
+                flex-direction: row; /* Alinea botones y marcador en la misma línea si cabe */
+                justify-content: space-between;
+                align-items: center;
+                gap: 15px;
+            }
+
+            .top-buttons-group {
+                flex-shrink: 0;
+            }
+
+            .back-index-btn, .top-restart-btn {
+                padding: 12px 14px; /* Botón más grande y táctil */
+                font-size: 0.85rem;
+            }
+
+            .scoreboard {
+                margin-bottom: 0;
+                padding: 10px 14px;
+                flex-grow: 1;
+                justify-content: space-around;
+                font-size: 0.8rem;
+            }
+
+            .card {
+                padding: 22px 18px; 
+            }
+
+            .theme-header-container {
+                padding: 12px 16px;
+            }
+
+            .theme-title {
+                font-size: 0.95rem;
+            }
+
+            .question-text {
+                font-size: 1.1rem;
+                margin-bottom: 20px;
+            }
+
+            .answer-btn {
+                padding: 14px 16px;
+                font-size: 0.95rem; 
+            }
+            
+            .answer-btn:hover:not(:disabled) {
+                padding-left: 16px; 
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr; 
+                gap: 10px;
+            }
+        }
+
+        /* Optimización estricta para móviles muy pequeños (menos de 400px) */
+        @media (max-width: 400px) {
+            .top-navbar {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .top-buttons-group {
+                justify-content: space-between;
+            }
+            .top-buttons-group > * {
+                flex: 1;
+                text-align: center;
+            }
+            .scoreboard {
+                justify-content: space-between;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="top-navbar">
+            <div class="top-buttons-group">
+                <a href="../index.html" class="back-index-btn">
+                    &#9776; Índex
+                </a>
+                <button id="top-restart-btn" class="top-restart-btn">
+                    &#8634; Reiniciar
+                </button>
+            </div>
+            
+
+            <div class="scoreboard" id="scoreboard">
+                <div class="score-item">Encerts: <span id="live-correct">0</span></div>
+                <div class="score-item">Errors: <span id="live-incorrect">0</span></div>
+                <div class="score-item">Restants: <span id="live-remaining">0</span></div>
+            </div>
+        </div>
+
+        <div class="theme-header-container" id="theme-header-container">
+    <div class="theme-label">Oposicions Generalitat</div>
+    
+    <!-- 1. Este es tu título real, el que tú quieres ver siempre: -->
+    <div class="theme-title">Exàmen PAT - A1 Escala Sup d'administració </div>
+    
+    <!-- 2. Este es el "cebo" para el JS. Está oculto (display:none), 
+            así que el JS cambiará su texto en segundo plano pero nadie lo verá: -->
+    <div id="global-theme-title" style="display: none;"></div>
+</div>
+
+        <div class="card with-theme-above" id="quiz-card">
+            <div class="card-header">
+                <div class="question-number">Pregunta <span id="current-index">1</span> de <span id="total-questions">1</span></div>
+                <div class="test-id" id="display-test-id">TEST</div>
+            </div>
+            
+            <div class="question-text" id="question-text">
+                Carregant pregunta...
+            </div>
+
+            <div class="answers-container" id="answers-container">
+            </div>
+
+            <div class="actions">
+                <button class="next-btn" id="next-btn">Següent Fitxa &rarr;</button>
+            </div>
+        </div>
+
+        <div class="card results-card" id="results-card">
+            <h2 class="results-title">Test Finalitzat</h2>
+            <p>Has completat totes les fitxes (incloent-hi las repeticions d'errors).</p>
+            
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <h3>Encerts Totals</h3>
+                    <p style="color: var(--correct-green);" id="final-correct">0</p>
+                </div>
+                <div class="stat-box">
+                    <h3>Errors Totals</h3>
+                    <p style="color: var(--incorrect-red);" id="final-incorrect">0</p>
+                </div>
+            </div>
+
+            <button class="restart-btn" id="restart-btn">Reiniciar Test</button>
+        </div>
+    </div>
+
+    <script src="pat_a1_interna.js"></script>
+</body>
+</html>

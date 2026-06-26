@@ -1,0 +1,228 @@
+/* VARIABLES DE COLOR (Fondo claro, detalles en rojo y negro) */
+:root {
+    --bg-color: #f7f9fa;
+    --card-bg: #ffffff;
+    --text-main: #1a1a1a;
+    --text-secondary: #555555;
+    --primary-red: #cc0000;
+    --gradient-red: linear-gradient(135deg, #e60000, #990000);
+    --hover-light-red: #fff5f5;
+    --border-color: #e1e4e6;
+    --correct-green: #2ecc71;
+    --incorrect-red: #e74c3c;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+}
+
+/* Marcador Superior */
+.scoreboard {
+    display: flex;
+    justify-content: space-between;
+    background: #ffffff;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 14px 20px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.score-item {
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.score-item span {
+    font-weight: bold;
+    color: var(--primary-red);
+}
+
+/* Ficha de la Pregunta */
+.card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    padding: 35px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #f2f2f2;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+.question-number {
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    font-weight: bold;
+}
+
+.test-id {
+    font-size: 0.8rem;
+    background: var(--gradient-red);
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.question-text {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: var(--text-main);
+}
+
+/* Opciones de respuesta */
+.answers-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.answer-btn {
+    background: #ffffff;
+    border: 1px solid var(--border-color);
+    color: var(--text-main);
+    padding: 16px 20px;
+    border-radius: 8px;
+    text-align: left;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+.answer-btn:hover:not(:disabled) {
+    background-color: var(--hover-light-red);
+    border-color: var(--primary-red);
+    padding-left: 25px;
+}
+
+/* Estados de validación (Acierto / Error) */
+.answer-btn.correct {
+    background-color: var(--correct-green) !important;
+    border-color: var(--correct-green) !important;
+    color: #ffffff !important;
+    font-weight: bold;
+}
+
+.answer-btn.incorrect {
+    background-color: var(--incorrect-red) !important;
+    border-color: var(--incorrect-red) !important;
+    color: #ffffff !important;
+}
+
+.answer-btn:disabled {
+    cursor: not-allowed;
+}
+
+/* Botón Siguiente */
+.actions {
+    margin-top: 25px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.next-btn {
+    background: var(--gradient-red);
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 4px 12px rgba(204, 0, 0, 0.2);
+    transition: transform 0.1s, opacity 0.2s;
+}
+
+.next-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 15px rgba(204, 0, 0, 0.3);
+}
+
+/* Pantalla de Resultados Finales */
+.results-card {
+    text-align: center;
+    display: none;
+}
+
+.results-title {
+    font-size: 2rem;
+    color: var(--text-main);
+    margin-bottom: 15px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.stat-box {
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    padding: 18px;
+    border-radius: 8px;
+}
+
+.stat-box h3 {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.stat-box p {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.restart-btn {
+    background: #ffffff;
+    color: var(--text-main);
+    border: 2px solid var(--text-main);
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.restart-btn:hover {
+    background: var(--text-main);
+    color: #ffffff;
+}
