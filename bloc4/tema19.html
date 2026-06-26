@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 19: Normativa de Funció Pública | C1 Generalitat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght=300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-body: #ffffff;
+            --bg-card: #f8fafc;
+            --gencat-red: #cc0000; /* Vermell oficial Generalitat */
+            --brand-dark: #0f172a;
+            --brand-black: #020617; /* Negre pur */
+            --text-main: #0f172a;
+            --text-dim: #475569;
+            --border: #e2e8f0;
+        }
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            font-family: 'Outfit', sans-serif;
+            padding: 20px;
+            line-height: 1.6;
+            margin: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .notes-container { max-width: 900px; margin: 0 auto; }
+
+        /* Capçalera: Recuadro negre amb marc superior vermell */
+        .mission-header {
+            background: var(--brand-black);
+            color: #ffffff;
+            padding: 35px;
+            border-radius: 0 0 16px 16px;
+            margin-bottom: 40px;
+            border-top: 6px solid var(--gencat-red);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .gencat-top-label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #94a3b8;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .mission-header h1 { 
+            font-size: 1.8rem; 
+            font-weight: 800; 
+            margin: 0; 
+            letter-spacing: -0.5px; 
+            color: #ffffff; 
+        }
+        
+        .inner-red-box {
+            background: var(--gencat-red);
+            color: #ffffff;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-size: 1rem;
+            font-weight: 400;
+            border-left: 4px solid #ffffff;
+        }
+
+        .section-title {
+            border-bottom: 2px solid var(--gencat-red);
+            color: var(--brand-black);
+            font-size: 1.25rem;
+            margin: 40px 0 20px;
+            padding-bottom: 6px;
+            text-transform: uppercase;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+        }
+
+        .data-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .important-list { list-style: none; padding: 0; margin: 0; }
+        .important-list li { 
+            background: white; 
+            margin-bottom: 10px; 
+            padding: 14px; 
+            border-radius: 8px; 
+            border-left: 4px solid var(--gencat-red);
+            font-size: 0.95rem;
+            border-top: 1px solid var(--border);
+            border-right: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .table-container { overflow-x: auto; margin-top: 15px; border-radius: 8px; border: 1px solid var(--border); }
+        .level-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; background: white; }
+        .level-table th { background: var(--brand-dark); color: white; padding: 12px; text-align: left; font-weight: 700; }
+        .level-table td { border-bottom: 1px solid var(--border); padding: 12px; color: var(--text-main); }
+        .level-table tr:last-child td { border-bottom: none; }
+
+        .highlight-box {
+            background: #fff5f5;
+            border: 1px solid #fca5a5;
+            border-left: 4px solid var(--gencat-red);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .highlight-box p { margin: 8px 0; font-size: 0.95rem; }
+
+        .btn-back {
+            display: inline-block;
+            text-decoration: none;
+            color: var(--text-dim);
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: color 0.2s;
+        }
+        .btn-back:hover { color: var(--gencat-red); }
+
+        .custom-footer {
+            text-align: center; 
+            margin-top: 60px; 
+            padding: 20px 0;
+            border-top: 1px solid var(--border);
+            font-size: 0.85rem; 
+            color: var(--text-dim); 
+            font-weight: 600;
+            letter-spacing: 0.3px;
+        }
+        
+        h3 { font-size: 1.05rem; margin: 15px 0 5px 0; color: var(--brand-dark); font-weight: 700; }
+    </style>
+</head>
+<body>
+
+    <div class="notes-container">
+        <a href="/index.html" class="btn-back">⬅ TORNAR AL LLISTAT</a>
+
+        <header class="mission-header">
+            <div class="gencat-top-label">Generalitat de Catalunya · Funció Pública (C1)</div>
+            <h1>TEMA 19: NORMATIVA DE FUNCIÓ PÚBLICA</h1>
+            
+            <div class="inner-red-box">
+                Estudi de l'EBEP i el Decret Legislatiu 1/1997: tipologies del personal, principis i sistemes d'accés i causes resolutòries de la condició de funcionari.
+            </div>
+        </header>
+
+        <h2 class="section-title">1. CLASSES D'EMPLEATS PÚBLICS (Art. 8 EBEP)</h2>
+        <div class="data-card">
+            <p style="margin-top: 0;">Són empleats públics els qui exerceixen funcions retribuïdes al servei dels interessos generals de la Generalitat de Catalunya. Es classifiquen en quatre categories definides estrictament per llei:</p>
+
+            <div class="table-container">
+                <table class="level-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 25%;">Tipus d'Empleat</th>
+                            <th>Definició Legal i Característiques d'Examen</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>Funcionari de carrera</b></td>
+                            <td>Vinculats a la Generalitat per una **relació estatutària** regulada pel dret administratiu. Exerceixen serveis professionals permanents. **⚠️ Exclusivitat:** L'exercici de les funcions que impliquin la participació directa en les funcions públiques o en la salvaguarda dels interessos generals corresponen exclusivament als funcionaris.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Funcionari interí</b></td>
+                            <td>Nomenats per raons justificades de **necessitat i urgència** per exercir funcions pròpies de funcionaris de carrera quan es doni alguna de les següents circumstàncies: existència de places vacants (màxim 3 anys), substitució transitòria del titular, execució de programes temporals (màxim 3 anys ampliables a 1 més), o acumulació de tasques (màxim 9 mesos dins d'un període de 18).</td>
+                        </tr>
+                        <tr>
+                            <td><b>Personal laboral</b></td>
+                            <td>Vinculats per una **relació contractual** de treball i regulats pel dret laboral (Estatut dels Treballadors i convenis col·lectius). En funció de la durada del contracte, pot ser fix, per temps indefinit o temporal. Ocupen les places expressament classificades com a tals en les RLT (Relacions de Llocs de Treball).</td>
+                        </tr>
+                        <tr>
+                            <td><b>Personal eventual</b></td>
+                            <td>Nomenats en virtut d'una relació de caràcter no permanent. Exerceixen exclusivament funcions de **confiança o assessorament especial** no reservades a funcionaris. El seu nomenament i cessament són lliures. **Cessen automàticament** quan cessa l'autoritat política que els va nomenar. El seu temps com a eventual no compta com a mèrit per a l'accés a la funció pública.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. SELECCIÓ DEL PERSONAL I PRINCIPIS RECTORS (Art. 55)</h2>
+        <div class="data-card">
+            <p style="margin-top: 0;">Tots els procediments de selecció de personal al servei de la Generalitat de Catalunya han de garantir l'accés d'acord amb els principis constitucionals de **igualtat, mèrit i capacitat**.</p>
+
+            <h3>A. Principis Obligatoris del Procediment (Art. 55.2 EBEP):</h3>
+            <ul class="important-list">
+                <li><b>Publicitat:</b> De les convocatòries i de les seves bases al Diari Oficial de la Generalitat de Catalunya ($DOGC$).</li>
+                <li><b>Transparència i Objectivitat:</b> En el desenvolupament del procés i en l'actuació dels òrgans d'avaluació.</li>
+                <li><b>Imparcialitat i Professionalitat:</b> Dels membres dels òrgans de selecció. **⚠️ Prohibició de test:** Els membres dels tribunals de selecció han de ser funcionaris de carrera; en cap cas en poden formar part el personal eventual, els càrrecs polítics ni els representants sindicals (aquests últims només hi poden assistir com a observadors).</li>
+                <li><b>Independència funcional:</b> Garantia de neutralitat de l'òrgan col·legiat de selecció.</li>
+            </ul>
+
+            <h3>B. Sistemes d'Accés</h3>
+            <p style="margin-top: 0; font-size: 0.95rem;">Els sistemes selectius ordinaris són l'**oposició** (superació de proves teòriques i pràctiques) i el **concurs-oposició** (proves més valoració de mèrits com l'experiència prèvia). El sistema de *concurs de mèrits pur* té caràcter excepcional i només es pot aplicar si una llei expressa ho autoritza.</p>
+        </div>
+
+        <h2 class="section-title">3. PÈRDUA DE LA RELACIÓ DE SERVEI (Art. 63 EBEP)</h2>
+        <div class="data-card">
+            <p style="margin-top: 0;">La condició de funcionari de carrera de la Generalitat de Catalunya es perd de manera definitiva per algun dels següents motius establerts per la llei:</p>
+
+            <ul class="important-list">
+                <li><b>A. Renúncia voluntària:</b> Manifestada per escrit de forma expressa de l'interessat. No es pot acceptar si el funcionari està subjecte a un expedient disciplinari o processat per un delicte.</li>
+                <li><b>B. Pèrdua de la nacionalitat:</b> Espanyola o de qualsevol Estat membre de la Unió Europea que hagués servit de base per a l'accés (tret que es justifiqui l'adquisició simultània d'una altra nacionalitat vàlida).</li>
+                <li><b>C. Jubilació total del funcionari:</b> Pot ser voluntària (complint els requisits d'edat i cotització), forçosa (en complir l'edat legalment establerta) o per incapacitat permanent total.</li>
+                <li><b>D. Sanció disciplinària de separació del servei:</b> Té caràcter definitiu i s'imposa mitjançant un procediment disciplinari per la comissió d'una falta molt greu.</li>
+                <li><b>E. Pena principal o accessòria d'inhabilitació:</b> Inhabilitació absoluta o especial per a càrrec públic dictada per sentència ferma dels tribunals de justícia.</li>
+            </ul>
+
+            <div class="highlight-box">
+                <p><b>🔄 REHABILITACIÓ DE LA CONDICIÓ (Pregunta parany habitual):</b></p>
+                <p style="margin: 0; font-size: 0.95rem;">En cas de pèrdua de la condició per pèrdua de nacionalitat o incapacitat permanent, si posteriorment es recupera la nacionalitat o es reverteix la incapacitat, l'interessat pot sol·licitar la **rehabilitació**, la qual s'ha de concedir. En cas d'inhabilitació penal, la rehabilitació té caràcter **excepcional** i és concedida de forma discrecional pel Govern de la Generalitat atenent a les circumstàncies del cas.</p>
+            </div>
+        </div>
+
+        <footer class="custom-footer">
+            © 2026 OpoGene | Creat per JOMP
+        </footer>
+    </div>
+
+</body>
+</html>

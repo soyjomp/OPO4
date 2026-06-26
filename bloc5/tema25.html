@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 25: Cicle de vida de les dades, Open Data i Mineria | C1 Generalitat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght=300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-body: #ffffff;
+            --bg-card: #f8fafc;
+            --gencat-red: #cc0000;
+            --brand-dark: #0f172a;
+            --brand-black: #020617;
+            --text-main: #0f172a;
+            --text-dim: #475569;
+            --border: #e2e8f0;
+        }
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            font-family: 'Outfit', sans-serif;
+            padding: 20px;
+            line-height: 1.6;
+            margin: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .notes-container { max-width: 900px; margin: 0 auto; }
+
+        .mission-header {
+            background: var(--brand-black);
+            color: #ffffff;
+            padding: 35px;
+            border-radius: 0 0 16px 16px;
+            margin-bottom: 40px;
+            border-top: 6px solid var(--gencat-red);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .gencat-top-label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #94a3b8;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .mission-header h1 { font-size: 1.8rem; font-weight: 800; margin: 0; color: #ffffff; }
+        
+        .inner-red-box {
+            background: var(--gencat-red);
+            color: #ffffff;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-size: 1rem;
+            border-left: 4px solid #ffffff;
+        }
+
+        .section-title {
+            border-bottom: 2px solid var(--gencat-red);
+            color: var(--brand-black);
+            font-size: 1.25rem;
+            margin: 40px 0 20px;
+            padding-bottom: 6px;
+            text-transform: uppercase;
+            font-weight: 800;
+        }
+
+        .data-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .important-list { list-style: none; padding: 0; margin: 0; }
+        .important-list li { 
+            background: white; 
+            margin-bottom: 10px; 
+            padding: 14px; 
+            border-radius: 8px; 
+            border-left: 4px solid var(--gencat-red);
+            border: 1px solid var(--border);
+            font-size: 0.95rem;
+        }
+
+        .highlight-box {
+            background: #fff5f5;
+            border: 1px solid #fca5a5;
+            border-left: 4px solid var(--gencat-red);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .btn-back {
+            display: inline-block;
+            text-decoration: none;
+            color: var(--text-dim);
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            transition: color 0.2s;
+        }
+        .btn-back:hover { color: var(--gencat-red); }
+
+        .custom-footer {
+            text-align: center; 
+            margin-top: 60px; 
+            padding: 20px 0;
+            border-top: 1px solid var(--border);
+            font-size: 0.85rem; 
+            color: var(--text-dim); 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="notes-container">
+        <a href="/index.html" class="btn-back">⬅ TORNAR AL LLISTAT</a>
+
+        <header class="mission-header">
+            <div class="gencat-top-label">Generalitat de Catalunya · Gestió de la Informació (C1)</div>
+            <h1>TEMA 25: CICLE DE VIDA, OPEN DATA I MINERIA</h1>
+            
+            <div class="inner-red-box">
+                Gestió integral de la dada pública: des de la seva generació fins a la seva explotació mitjançant Open Data i tècniques d'anàlisi.
+            </div>
+        </header>
+
+        <h2 class="section-title">1. CICLE DE VIDA DE LES DADES</h2>
+        <div class="data-card">
+            <p>El cicle de vida descriu les fases per les quals passa una dada des que es crea fins que se suprimeix o arxiva. És vital pel compliment normatiu:</p>
+            <ul class="important-list">
+                <li><b>Generació/Captura:</b> Creació o entrada de la dada (ex. registre d'una sol·licitud).</li>
+                <li><b>Emmagatzematge/Manteniment:</b> La dada s'allotja en sistemes segurs (bases de dades).</li>
+                <li><b>Processament/Ús:</b> La dada s'utilitza per a fins administratius.</li>
+                <li><b>Publicació/Intercanvi:</b> Difusió (transparència) o transmissió entre organismes.</li>
+                <li><b>Arxiu/Destrucció:</b> Segons el calendari de conservació i accés, la dada es conserva històricament o s'elimina de forma segura.</li>
+            </ul>
+        </div>
+
+        <h2 class="section-title">2. DADES OBERTES (OPEN DATA)</h2>
+        <div class="data-card">
+            <p>Les dades obertes són dades primàries que l'Administració posa a disposició de la ciutadania perquè siguin <b>reutilitzades</b> sense restriccions, excepte les derivades de la protecció de dades (anonimització).</p>
+            <ul class="important-list">
+                <li><b>Requisits clau (Examen):</b> Han de ser dades en format <b>llegible per màquina</b> (ex. CSV, JSON, XML), obertes, gratuïtes i amb una llicència que permeti la seva redistribució.</li>
+                <li><b>Portal de Dades Obertes de la Generalitat:</b> És el punt únic on es publiquen aquests conjunts de dades per fomentar la transparència i l'economia de la dada.</li>
+            </ul>
+        </div>
+
+        <h2 class="section-title">3. MINERIA DE DADES (DATA MINING)</h2>
+        <div class="data-card">
+            <p>És un procés d'anàlisi de grans volums de dades per descobrir patrons, tendències o correlacions que no són evidents a simple vista.</p>
+            <div class="highlight-box">
+                <p><b>⚠️ ATENCIÓ AMB LES RESPOSTES TRANYA:</b></p>
+                <p style="margin: 5px 0;"><b>1. Mineria vs. Open Data:</b> La mineria és una <b>eina d'anàlisi</b> (per extreure valor), mentre que l'Open Data és una <b>política de publicació</b> (per cedir informació).</p>
+                <p style="margin: 5px 0;"><b>2. Privacitat:</b> La mineria de dades en l'àmbit públic <b>MAI</b> ha d'infringir la privacitat. S'utilitzen tècniques d'agregació i anonimització perquè no es pugui identificar cap ciutadà en particular.</p>
+                <p style="margin: 5px 0;"><b>3. Finalitat:</b> S'utilitza per millorar la presa de decisions públiques i detectar situacions de frau o necessitats de serveis públics de manera proactiva.</p>
+            </div>
+        </div>
+
+        <footer class="custom-footer">
+            © 2026 OpoGene | Creat per JOMP
+        </footer>
+    </div>
+
+</body>
+</html>

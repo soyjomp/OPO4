@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 4: Protecció de Dades | C1 Generalitat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght=300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-body: #ffffff;
+            --bg-card: #f8fafc;
+            --gencat-red: #cc0000; /* Vermell oficial Generalitat */
+            --brand-dark: #0f172a;
+            --brand-black: #020617; /* Negre pur */
+            --text-main: #0f172a;
+            --text-dim: #475569;
+            --border: #e2e8f0;
+        }
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            font-family: 'Outfit', sans-serif;
+            padding: 20px;
+            line-height: 1.6;
+            margin: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .notes-container { max-width: 900px; margin: 0 auto; }
+
+        /* Capçalera: Recuadro negre amb marc superior vermell */
+        .mission-header {
+            background: var(--brand-black);
+            color: #ffffff;
+            padding: 35px;
+            border-radius: 0 0 16px 16px;
+            margin-bottom: 40px;
+            border-top: 6px solid var(--gencat-red);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .gencat-top-label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #94a3b8;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .mission-header h1 { 
+            font-size: 1.8rem; 
+            font-weight: 800; 
+            margin: 0; 
+            letter-spacing: -0.5px; 
+            color: #ffffff; 
+        }
+        
+        .inner-red-box {
+            background: var(--gencat-red);
+            color: #ffffff;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-size: 1rem;
+            font-weight: 400;
+            border-left: 4px solid #ffffff;
+        }
+
+        .section-title {
+            border-bottom: 2px solid var(--gencat-red);
+            color: var(--brand-black);
+            font-size: 1.25rem;
+            margin: 40px 0 20px;
+            padding-bottom: 6px;
+            text-transform: uppercase;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+        }
+
+        .data-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .important-list { list-style: none; padding: 0; margin: 0; }
+        .important-list li { 
+            background: white; 
+            margin-bottom: 10px; 
+            padding: 14px; 
+            border-radius: 8px; 
+            border-left: 4px solid var(--gencat-red);
+            font-size: 0.95rem;
+            border-top: 1px solid var(--border);
+            border-right: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .table-container { overflow-x: auto; margin-top: 15px; border-radius: 8px; border: 1px solid var(--border); }
+        .level-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; background: white; }
+        .level-table th { background: var(--brand-dark); color: white; padding: 12px; text-align: left; font-weight: 700; }
+        .level-table td { border-bottom: 1px solid var(--border); padding: 12px; color: var(--text-main); }
+        .level-table tr:last-child td { border-bottom: none; }
+
+        .highlight-box {
+            background: #fff5f5;
+            border: 1px solid #fca5a5;
+            border-left: 4px solid var(--gencat-red);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .highlight-box p { margin: 8px 0; font-size: 0.95rem; }
+
+        .btn-back {
+            display: inline-block;
+            text-decoration: none;
+            color: var(--text-dim);
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: color 0.2s;
+        }
+        .btn-back:hover { color: var(--gencat-red); }
+
+        .custom-footer {
+            text-align: center; 
+            margin-top: 60px; 
+            padding: 20px 0;
+            border-top: 1px solid var(--border);
+            font-size: 0.85rem; 
+            color: var(--text-dim); 
+            font-weight: 600;
+            letter-spacing: 0.3px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="notes-container">
+        <a href="/index.html" class="btn-back">⬅ TORNAR AL LLISTAT</a>
+
+        <header class="mission-header">
+            <div class="gencat-top-label">Generalitat de Catalunya · Administració Pública (C1)</div>
+            <h1>TEMA 4: PROTECCIÓ DE DADES DE CARÀCTER PERSONAL</h1>
+            
+            <div class="inner-red-box">
+                Protecció de dades de caràcter personal: definicions, categories i consentiment.
+            </div>
+        </header>
+
+        <h2 class="section-title">1. DEFINICIONS FONAMENTALS (Art. 4 RGPD)</h2>
+        <div class="data-card">
+            <p style="margin-top: 0; font-weight: 600;">El marc normatiu està regulat pel Reglament General de Protecció de Dades de la UE (RGPD 2016/679) i la Llei Orgànica 3/2018 (LOPDGDD). Conceptes clau que cal memoritzar:</p>
+            <ul class="important-list">
+                <li><b>Dada personal:</b> Tota informació sobre una persona física identificada o identificable (l'interessat). Exemples: un nom, un DNI, dades de localització o un identificador en línia.</li>
+                <li><b>Tractament:</b> Qualsevol operació o conjunt d'operacions aplicades sobre dades personals (recollida, registre, organització, estructuració, conservació, consulta, difusió o supressió).</li>
+                <li><b>Responsable del tractament:</b> La persona física o jurídica, autoritat pública o servei que <b>determina les finalitats i els mitjans</b> del tractament. (Ex: Un Departament de la Generalitat).</li>
+                <li><b>Encarregat del tractament:</b> La persona física o jurídica, autoritat pública o servei que <b>tracta dades personals per compte del responsable</b>. (Ex: Una empresa externa informàtica subcontractada pel Departament).</li>
+            </ul>
+        </div>
+
+        <h2 class="section-title">2. CATEGORIES DE DADES</h2>
+        <div class="data-card">
+            <p style="margin-top: 0;">La normativa divideix les dades en funció del seu nivell de risc i de la necessitat de protecció jurídica:</p>
+            
+            <div class="table-container">
+                <table class="level-table">
+                    <thead>
+                        <tr>
+                            <th>Categoria de Dada</th>
+                            <th>Tipologia i Contingut</th>
+                            <th>Règim de Tractament</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>Dades Generals / Ordinàries</b></td>
+                            <td>Dades bàsiques d'identificació: nom, cognoms, adreça, telèfon, correu electrònic, NIF, dades professionals o econòmiques bàsiques.</td>
+                            <td>Es poden tractar si concorre alguna de les bases legals generals (obligació legal, interès públic, contracte o consentiment).</td>
+                        </tr>
+                        <tr>
+                            <td><b>Categories Especials de Dades</b><br>(Art. 9 RGPD)</td>
+                            <td>Origen ètnic o racial, opinions polítiques, conviccions religioses o filosòfiques, afiliació sindical, <b>dades genètiques, dades biomètriques</b>, dades de salut o relatives a la vida/orientació sexual.</td>
+                            <td><b>Prohibició general de tractament</b>, excepte si s'aplica alguna excepció explícita (consentiment exprés, protecció d'interessos vitals, motius de salut pública o interès públic essencial).</td>
+                        </tr>
+                        <tr>
+                            <td><b>Dades de Condemnes i Infraccions Penals</b><br>(Art. 10 RGPD)</td>
+                            <td>Informació relativa a antecedents penals, condemnes, infraccions o mesures de seguretat relacionades.</td>
+                            <td><b>Només</b> es poden tractar sota la supervisió de les autoritats públiques o si ho autoritza el dret de l'Estat o de la UE.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <h2 class="section-title">3. EL CONSENTIMENT DE L'INTERESSAT</h2>
+        <div class="data-card">
+            <p style="margin-top: 0;">El consentiment és una de les bases legals clau per poder tractar dades personals, però per ser vàlid ha de complir requisits estrictes.</p>
+            
+            <p style="font-weight: 600; margin-top: 15px;">Característiques imperatives del consentiment (*Examen*):</p>
+            <div class="highlight-box" style="margin: 10px 0 20px 0;">
+                <p><b>Lliure:</b> L'usuari ha de tenir una elecció real. No pot ser obligatori per accedir a un servei si les dades no són necessàries per a aquest servei.</p>
+                <p><b>Específic:</b> S'ha de prestar per a una finalitat concreta i determinada. Si hi ha diverses finalitats, s'ha de demanar un consentiment per a cadascuna d'elles.</p>
+                <p><b>Informat:</b> L'interessat ha de conèixer, com a mínim, qui és el responsable, per a què es faran servir les dades i quins drets té.</p>
+                <p><b>Inequívoc:</b> Requereix una <b>acció afirmativa clara</b> de l'interessat. El silenci, les caselles ja marcades per defecte o la inacció <b>NO</b> constitueixen consentiment.</p>
+            </div>
+
+            <ul class="important-list">
+                <li><b>Revocabilitat:</b> L'interessat té dret a retirar el seu consentiment en qualsevol moment. Retirar-lo ha de ser igual de fàcil que donar-lo.</li>
+                <li><b>Menors d'edat (Art. 7 LOPDGDD):</b> A Catalunya i a la resta de l'Estat, el tractament de dades de menors basat en el consentiment és lícit a partir dels <b>14 anys</b>. Per sota d'aquesta edat, cal el consentiment dels pares o tutors legals.</li>
+            </ul>
+        </div>
+
+        <h2 class="section-title">4. ELS DRETS DE LES PERSONES (Drets ARSLOP)</h2>
+        <div class="data-card">
+            <p style="margin-top: 0;">El RGPD amplia els antics drets ARCO. Ara l'Administració ha de respondre de manera obligatòria i **gratuïta** (en el termini màxim d'<b>1 mes</b>, ampliable a 2 mesos per complexitat) als següents drets:</p>
+            <ul class="important-list">
+                <li><b>Accés:</b> Saber si el responsable està tractant les seves dades, quines són i amb quina finalitat.</li>
+                <li><b>Rectificació:</b> Sol·licitar la correcció de dades inexactes o l'esmena de dades incompletes.</li>
+                <li><b>Supressió ("Dret a l'oblit"):</b> Demanar que s'eliminin les dades quan ja no siguin necessàries o el tractament sigui il·lícit.</li>
+                <li><b>Limitació del tractament:</b> Sol·licitar que es bloquegi temporalment el tractament de les dades mentre es verifica la seva exactitud o licitud.</li>
+                <li><b>Portabilitat:</b> Rebre les seves dades personals en un format estructurat i de lectura mecànica per transmetre-les a un altre responsable.</li>
+                <li><b>Oposició:</b> Oposar-se al fet que les seves dades siguin objecte de tractament per motius personals (tret que l'Administració al·legui un interès públic imperiós).</li>
+            </ul>
+        </div>
+
+        <h2 class="section-title">5. SOBERANIA I CONTROL: APDCAT I EL DPD</h2>
+        <div class="data-card">
+            <p style="margin-top: 0;">L'estructura institucional de control de la protecció de dades a l'ecosistema públic de Catalunya compta amb dos pilars:</p>
+            <ul class="important-list">
+                <li><b>Autoritat Catalana de Protecció de Dades (APDCAT):</b> Organisme independent de la Generalitat que supervisa el compliment de la normativa en les institucions públiques catalanes (Generalitat, Ajuntaments, Universitats públiques). Té capacitat sancionadora i inspectora.</li>
+                <li><b>Delegat de Protecció de Dades (DPD / DPO):</b> Figura **obligatòria** a totes les institucions de l'Administració Pública. Actua com a enllaç entre els ciutadans, l'òrgan administratiu i l'APDCAT. Supervisa de manera interna la política de protecció de dades del seu departament.</li>
+            </ul>
+        </div>
+
+        <footer class="custom-footer">
+            © 2026 OpoGene | Creat per JOMP
+        </footer>
+    </div>
+
+</body>
+</html>

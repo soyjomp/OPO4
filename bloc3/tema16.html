@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 16: Documentació Administrativa i Llenguatge Inclusiu | C1 Generalitat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght=300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-body: #ffffff;
+            --bg-card: #f8fafc;
+            --gencat-red: #cc0000; /* Vermell oficial Generalitat */
+            --brand-dark: #0f172a;
+            --brand-black: #020617; /* Negre pur */
+            --text-main: #0f172a;
+            --text-dim: #475569;
+            --border: #e2e8f0;
+        }
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            font-family: 'Outfit', sans-serif;
+            padding: 20px;
+            line-height: 1.6;
+            margin: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .notes-container { max-width: 900px; margin: 0 auto; }
+
+        /* Capçalera: Recuadro negre amb marc superior vermell */
+        .mission-header {
+            background: var(--brand-black);
+            color: #ffffff;
+            padding: 35px;
+            border-radius: 0 0 16px 16px;
+            margin-bottom: 40px;
+            border-top: 6px solid var(--gencat-red);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .gencat-top-label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #94a3b8;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .mission-header h1 { 
+            font-size: 1.8rem; 
+            font-weight: 800; 
+            margin: 0; 
+            letter-spacing: -0.5px; 
+            color: #ffffff; 
+        }
+        
+        .inner-red-box {
+            background: var(--gencat-red);
+            color: #ffffff;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-size: 1rem;
+            font-weight: 400;
+            border-left: 4px solid #ffffff;
+        }
+
+        .section-title {
+            border-bottom: 2px solid var(--gencat-red);
+            color: var(--brand-black);
+            font-size: 1.25rem;
+            margin: 40px 0 20px;
+            padding-bottom: 6px;
+            text-transform: uppercase;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+        }
+
+        .data-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .important-list { list-style: none; padding: 0; margin: 0; }
+        .important-list li { 
+            background: white; 
+            margin-bottom: 10px; 
+            padding: 14px; 
+            border-radius: 8px; 
+            border-left: 4px solid var(--gencat-red);
+            font-size: 0.95rem;
+            border-top: 1px solid var(--border);
+            border-right: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .table-container { overflow-x: auto; margin-top: 15px; border-radius: 8px; border: 1px solid var(--border); }
+        .level-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; background: white; }
+        .level-table th { background: var(--brand-dark); color: white; padding: 12px; text-align: left; font-weight: 700; }
+        .level-table td { border-bottom: 1px solid var(--border); padding: 12px; color: var(--text-main); }
+        .level-table tr:last-child td { border-bottom: none; }
+
+        .highlight-box {
+            background: #fff5f5;
+            border: 1px solid #fca5a5;
+            border-left: 4px solid var(--gencat-red);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .highlight-box p { margin: 8px 0; font-size: 0.95rem; }
+
+        .btn-back {
+            display: inline-block;
+            text-decoration: none;
+            color: var(--text-dim);
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: color 0.2s;
+        }
+        .btn-back:hover { color: var(--gencat-red); }
+
+        .custom-footer {
+            text-align: center; 
+            margin-top: 60px; 
+            padding: 20px 0;
+            border-top: 1px solid var(--border);
+            font-size: 0.85rem; 
+            color: var(--text-dim); 
+            font-weight: 600;
+            letter-spacing: 0.3px;
+        }
+        
+        h3 { font-size: 1.05rem; margin: 15px 0 5px 0; color: var(--brand-dark); font-weight: 700; }
+    </style>
+</head>
+<body>
+
+    <div class="notes-container">
+        <a href="/index.html" class="btn-back">⬅ TORNAR AL LLISTAT</a>
+
+        <header class="mission-header">
+            <div class="gencat-top-label">Generalitat de Catalunya · Administració Pública (C1)</div>
+            <h1>TEMA 16: DOCUMENTACIÓ ADMINISTRATIVA I LLENGUATGE NO SEXISTA</h1>
+            
+            <div class="inner-red-box">
+                Estudi formal dels principals documents de gestió de l'escala administrativa (cartes, certificats, actes) i l'aplicació dels criteris de llenguatge inclusiu de la Generalitat.
+            </div>
+        </header>
+
+        <h2 class="section-title">1. LA CARTA ADMINISTRATIVA</h2>
+        <div class="data-card">
+            <p style="margin-top: 0;">La **carta administrativa** és el document utilitzat per a les comunicacions formals que l'Administració de la Generalitat adreça a persones particulars, entitats privades o empreses externes.</p>
+            
+            <div class="highlight-box" style="background: #f0fdf4; border-color: #bbf7d0; border-left: 4px solid #22c55e;">
+                <p><b>💡 REGLETA D'EXAMEN: Carta vs. Ofici</b></p>
+                <p style="margin: 0; font-size: 0.95rem;">• La <b>carta</b> s'adreça a subjectes <b>externs</b> a l'Administració (ciutadans o privats).<br>• L'<b>ofici</b> s'utilitza exclusivament per a comunicacions <b>internes</b> entre òrgans de la mateixa o de diferents Administracions Públiques.</p>
+            </div>
+
+            <h3>Estructura Formal Oblatòria de la Carta:</h3>
+            <ul class="important-list">
+                <li><b>Capçalera:</b> Identificació institucional de l'òrgan emissor (logotip de la Generalitat, departament, direcció general) i referències (codis d'arxiu/expedient).</li>
+                <li><b>Destinatari:</b> Nom, cognoms, carrec (si escau) i adreça postal o electrònica de la persona o entitat a qui s'adreça. Es col·loca preferentment a la part superior dreta.</li>
+                <li><b>Datació:</b> Municipi de l'òrgan que l'emet i la data en format complet (ex: <i>Barcelona, 5 de juny de 2026</i>). No s'admeten abreviatures de mesos.</li>
+                <li><b>Cos (Salutació i Text):</b> Comença amb una fórmula de salutació breu (ex: <i>Senyor/a,</i>). El text s'estructura en blocs diferenciats: introducció, nucli del missatge (exposició clara del motiu) i conclusió.</li>
+                <li><b>Comiat i Signatura:</b> Fórmula de comiat formal i concisa (ex: <i>Atentament,</i> o <i>Cordialment,</i>), seguida del càrrec de qui signa, la signatura electrònica o manual, i el nom i cognoms de l'emissor.</li>
+            </ul>
+        </div>
+
+        <h2 class="section-title">2. EL CERTIFICAT (O CERTIFICACIÓ ADMINISTRATIVA)</h2>
+        <div class="data-card">
+            <p style="margin-top: 0;">El **certificat** és un document de caràcter probatori emès per l'Administració que dona fe de fets, actes, situacions o acords que consten en els seus fitxers, registres o expedients oficials.</p>
+
+            <div class="highlight-box">
+                <p><b>⚠️ PREGUNTA DE TEST MOLT FREQÜENT: Qui té la competència per certificar?</b></p>
+                <p>La facultat d'emetre certificats correspon exclusivament al **secretari/a** de l'òrgan col·legiat o al funcionari/a que tingui atribuïda la competència de custòdia dels registres. El certificat requereix sempre el **Vist i plau (Vist i plau / V- i B-) del superior jeràrquic** (el president/a o director/a) per validar la condició de qui l'expedeix.</p>
+            </div>
+
+            <h3>Estructura de la Certificació:</h3>
+            <ul class="important-list">
+                <li><b>Identificació de qui certifica:</b> Nom, cognoms i càrrec oficial de la persona que emet el document (ex: <i>El/la secretari/a de...</i>).</li>
+                <li><b>La paraula nucli:</b> S'insereix el text **CERTIFICO:** escrit en majúscules, negreta i centrat o destacat en una línia pròpia.</li>
+                <li><b>El text / cos:</b> Descripció exacta del fet que es constata mitjançant la introducció obligatòria **Que...** (ex: <i>Que en data X s'ha presentat la sol·licitud...</i>).</li>
+                <li><b>Fórmula de tancament d'efectes:</b> Clàusula final que indica a requeriment de qui s'emet o quina finalitat té (ex: <i>I perquè consti i tingui els efectes oportuns, lliuro aquesta certificació...</i>).</li>
+                <li><b>Data i Signatures:</b> Data completa de l'expedició, la signatura del secretari/a i la signatura de validació del superior amb la indicació explícita <i>Vist i plau</i>.</li>
+            </ul>
+        </div>
+
+        <h2 class="section-title">3. L'ACTA DE REUNIÓ</h2>
+        <div class="data-card">
+            <p style="margin-top: 0;">L'**acta** és el document que recull per escrit el resum d'allò que s'ha tractat, deliberat i acordat en una sessió o reunió formal d'un òrgan col·legiat de l'Administració Pública.</p>
+
+            <div class="table-container">
+                <table class="level-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 25%;">Part de l'Acta</th>
+                            <th>Contingut Obligatori Exigit per Llei</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>Capçalera</b></td>
+                            <td>Dades identificatives de la sessió: número d'ordre de l'acta, caràcter de la convocatòria (ordinària o extraordinària), lloc, data, hora d'inici i hora de finalització.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Relació d'assistents</b></td>
+                            <td>Llista de les persones presents (indicant qui actua com a President/a i qui com a Secretari/a) i de les persones que han excusat l'assistència o hi han faltat.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Ordre del dia</b></td>
+                            <td>Relació numerada de tots els temes fixats en la convocatòria que s'han de sotmetre a discussió en la sessió.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Desenvolupament i Acords</b></td>
+                            <td>Resum de les deliberacions de cada punt. És obligatori fer constar de manera molt precisa el text de **tots els acords adoptats** i el resultat de les votacions (vots a favor, en contra i abstencions).</td>
+                        </tr>
+                        <tr>
+                            <td><b>Fórmula de tancament</b></td>
+                            <td>Indicació de l'aixecament de la sessió (ex: <i>El/la president/a aixeca la sessió a les XX hores...</i>) i signatures del Secretari/a (emissor) amb el Vist i plau del President/a (conformitat).</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <h2 class="section-title">4. CRITERIS DE LLENGUATGE NO SEXISTA I INCLUSIU</h2>
+        <div class="data-card">
+            <p style="margin-top: 0;">En els exàmens de la Generalitat de Catalunya (C1), l'aplicació del **llenguatge no sexista** es avaluada de forma estricta. Els criteris corporatius oficials busquen evitar el masculí genèric sense sobrecarregar el text administratriu.</p>
+            
+            <h3>Estratègies Recomanades per la Generalitat:</h3>
+            <ul class="important-list">
+                <li><b>Noms col·lectius o institucionals:</b> Substituir els plurals masculins de persones per conceptes col·lectius.<br>
+                ❌ <i>Els administradors de la Generalitat</i> ➔  <i>L'estament administratiu / El personal administratiu de la Generalitat</i>.<br>
+                ❌ <i>Els ciutadans de Catalunya</i> ➔  <i>La ciutadania de Catalunya</i>.</li>
+                <li><b>Noms abstractes de càrrecs o funcions:</b> Utilitzar el nom de l'òrgan o de la funció en lloc del titular.<br>
+                ❌ <i>El Director General resoldrà...</i> ➔  <i>La Direcció General resoldrà...</i>.<br>
+                ❌ <i>El Cap de Servei signarà...</i> ➔  <i>La Capsa de Servei / La direcció del servei signarà...</i>.</li>
+                <li><b>Dobles formes (Formes desdoblades):</b> S'han d'utilitzar amb moderació per evitar textos repetitius. Primer es col·loca la forma femenina i després la masculina.<br>
+                ✓ <i>Els i les aspirants</i> o <i>Les o els sol·licitants</i>.</li>
+                <li><b>Evitar l'ús excessiu de la barra (/):</b> Les normes d'estil de la Generalitat desaconsellen l'ús sistemàtic de barres en el cos dels textos redactats perquè dificulten la lectura automàtica i digital.<br>
+                ❌ <i>El/la funcionari/a haurà de presentar el seu formulari...</i> ➔  <i>El personal funcionari ha de presentar el formulari...</i>.</li>
+            </ul>
+        </div>
+
+        <footer class="custom-footer">
+            © 2026 OpoGene | Creat per JOMP
+        </footer>
+    </div>
+
+</body>
+</html>

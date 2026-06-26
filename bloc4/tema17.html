@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 7: El Pressupost de la Generalitat: Concepte i Estructura | C1 Generalitat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght=300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-body: #ffffff;
+            --bg-card: #f8fafc;
+            --gencat-red: #cc0000; /* Vermell oficial Generalitat */
+            --brand-dark: #0f172a;
+            --brand-black: #020617; /* Negre pur */
+            --text-main: #0f172a;
+            --text-dim: #475569;
+            --border: #e2e8f0;
+        }
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            font-family: 'Outfit', sans-serif;
+            padding: 20px;
+            line-height: 1.6;
+            margin: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .notes-container { max-width: 900px; margin: 0 auto; }
+
+        /* Capçalera: Recuadro negre amb marc superior vermell */
+        .mission-header {
+            background: var(--brand-black);
+            color: #ffffff;
+            padding: 35px;
+            border-radius: 0 0 16px 16px;
+            margin-bottom: 40px;
+            border-top: 6px solid var(--gencat-red);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .gencat-top-label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #94a3b8;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .mission-header h1 { 
+            font-size: 1.8rem; 
+            font-weight: 800; 
+            margin: 0; 
+            letter-spacing: -0.5px; 
+            color: #ffffff; 
+        }
+        
+        .inner-red-box {
+            background: var(--gencat-red);
+            color: #ffffff;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-size: 1rem;
+            font-weight: 400;
+            border-left: 4px solid #ffffff;
+        }
+
+        .section-title {
+            border-bottom: 2px solid var(--gencat-red);
+            color: var(--brand-black);
+            font-size: 1.25rem;
+            margin: 40px 0 20px;
+            padding-bottom: 6px;
+            text-transform: uppercase;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+        }
+
+        .data-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .important-list { list-style: none; padding: 0; margin: 0; }
+        .important-list li { 
+            background: white; 
+            margin-bottom: 10px; 
+            padding: 14px; 
+            border-radius: 8px; 
+            border-left: 4px solid var(--gencat-red);
+            font-size: 0.95rem;
+            border-top: 1px solid var(--border);
+            border-right: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .table-container { overflow-x: auto; margin-top: 15px; border-radius: 8px; border: 1px solid var(--border); }
+        .level-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; background: white; }
+        .level-table th { background: var(--brand-dark); color: white; padding: 12px; text-align: left; font-weight: 700; }
+        .level-table td { border-bottom: 1px solid var(--border); padding: 12px; color: var(--text-main); }
+        .level-table tr:last-child td { border-bottom: none; }
+
+        .highlight-box {
+            background: #fff5f5;
+            border: 1px solid #fca5a5;
+            border-left: 4px solid var(--gencat-red);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .highlight-box p { margin: 8px 0; font-size: 0.95rem; }
+
+        .btn-back {
+            display: inline-block;
+            text-decoration: none;
+            color: var(--text-dim);
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: color 0.2s;
+        }
+        .btn-back:hover { color: var(--gencat-red); }
+
+        .custom-footer {
+            text-align: center; 
+            margin-top: 60px; 
+            padding: 20px 0;
+            border-top: 1px solid var(--border);
+            font-size: 0.85rem; 
+            color: var(--text-dim); 
+            font-weight: 600;
+            letter-spacing: 0.3px;
+        }
+        
+        h3 { font-size: 1.05rem; margin: 15px 0 5px 0; color: var(--brand-dark); font-weight: 700; }
+    </style>
+</head>
+<body>
+
+    <div class="notes-container">
+        <a href="/index.html" class="btn-back">⬅ TORNAR AL LLISTAT</a>
+
+        <header class="mission-header">
+            <div class="gencat-top-label">Generalitat de Catalunya · Finances Públiques (C1)</div>
+            <h1>TEMA 17: EL PRESSUPOST DE LA GENERALITAT DE CATALUNYA</h1>
+            
+            <div class="inner-red-box">
+                Estudi del Decret Legislatiu 3/2002: concepte legal, principis pressupostaris i la triple estructura (orgànica, funcional i econòmica) dels estats de despeses i ingressos.
+            </div>
+        </header>
+
+        <h2 class="section-title">1. CONCEPTE LEGAL DEL PRESSUPOST</h2>
+        <div class="data-card">
+            <p style="margin-top: 0;">Segons el Text refós de la Llei de finances públiques de Catalunya (D.L. 3/2002), els **Pressupostos de la Generalitat** són l'expressió xifrada, conjunta i sistemàtica de les obligacions que, com a màxim, poden reconèixer la Generalitat i les seves entitats autònomes, i dels drets que es prevegin liquidar durant el corresponent exercici.</p>
+            
+            <div class="highlight-box" style="background: #fffbeb; border-color: #fef08a; border-left: 4px solid #eab308;">
+                <p><b>⚠️ DIFERÈNCIA JURÍDICA FONAMENTAL (Molt demanada en supòsits pràctics):</b></p>
+                <p style="margin: 5px 0; font-size: 0.95rem;">• <b>Els crèdits de despeses són LIMITATIUS i VINCULANTS:</b> Són sostres de despesa. L'Administració no pot gastar més del que s'ha aprovat ni destinar els diners a finalitats diferents de les assignades, tret de les modificacions pressupostàries legalment autoritzades.</p>
+                <p style="margin: 5px 0; font-size: 0.95rem;">• <b>Les previsions d'ingressos són ESTIMATIVES:</b> Són meres previsions o càlculs numèrics. Si es recapta més del previst, l'Administració té més recursos; si es recapta menys, es pot produir un dèficit, però no és una infracció de la llei pressupostària.</p>
+            </div>
+            
+            <p style="margin-bottom: 0;"><b>Àmbit temporal:</b> L'exercici pressupostari coincideix necessàriament amb l'any natural (de l'1 de gener al 31 de desembre).</p>
+        </div>
+
+        <h2 class="section-title">2. ESTRUCTURA DELS ESTATS DE DESPESES (TRIPLE CLASSIFICACIÓ)</h2>
+        <div class="data-card">
+            <p style="margin-top: 0;">Aquesta és la part més preguntada en els exàmens de cos administratiu C1. Les despeses del pressupost es classifiquen seguint tres criteris simultanis que responen a tres preguntes: <b>Qui gasta? En què es gasta? Com es gasta?</b></p>
+
+            <h3>A. Classificació Orgànica (Qui gasta?)</h3>
+            <p style="margin-top: 0; font-size: 0.95rem;">Agrupa els crèdits segons els òrgans gestors i els centres de responsabilitat que gestionen els diners públics. S'estructura en seccions (Departaments de la Generalitat, Parlament, Consell de Garanties Estatutàries, Sindicatura de Comptes...) i serveis pressupostaris (Direccions Generals o entitats adscrites).</p>
+
+            <h3>B. Classificació Funcional i per Programes (En què es gasta?)</h3>
+            <p style="margin-top: 0; font-size: 0.95rem;">Agrupa els crèdits segons la naturalesa de les activitats a realitzar i els objectius que es persegueixen. És l'estructura central de la gestió (ex: Programa 421.10 Ensenyament primari). Permet conèixer el cost dels serveis públics bàsics com salut, educació o seguretat.</p>
+
+            <h3>C. Classificació Econòmica (Com es gasta? / Quina és la naturalesa de la despesa?)</h3>
+            <p style="margin-top: 0; font-size: 0.95rem;">Distingeix entre despeses corrents, despeses de capital i operacions financeres. S'organitza obligatòriament en <b>Capítols</b>, Articles, Conceptes i Subconceptes.</p>
+        </div>
+
+        <h2 class="section-title">3. ELS CAPÍTOLS DE LA CLASSIFICACIÓ ECONÒMICA</h2>
+        <div class="data-card">
+            <p style="margin-top: 0;">Als exàmens tipus test de la Generalitat els encanta posar exemples pràctics (Ex: *A quin capítol pressupostari s'imputa el pagament del lloguer d'una oficina departamental?*). Cal memoritzar perfectament aquest quadre:</p>
+
+            <div class="table-container">
+                <table class="level-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 15%;">Capítol</th>
+                            <th style="width: 42%;">ESTAT DE DESPESES (Com es gasta?)</th>
+                            <th style="width: 43%;">ESTAT D'INGRESSOS (D'on venen els diners?)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="background: #f1f5f9; font-weight: 600;"><td colspan="3">OPERACIONS CORRETS (Despeses ordinàries de funcionament / Ingressos ordinaris)</td></tr>
+                        <tr>
+                            <td><b>Capítol 1</b></td>
+                            <td><b>Despeses de personal:</b> Retribucions nòmines funcionaris, personal laboral, quotes Seguretat Social.</td>
+                            <td><b>Impostos directes:</b> IRPF, impost sobre successions i donacions.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Capítol 2</b></td>
+                            <td><b>Despeses corrents de béns i serveis:</b> Lloguers (arrendaments), material d'oficina, llum, aigua, neteja.</td>
+                            <td><b>Impostos indirectes:</b> IVA, impost sobre transmissions patrimonials (ITP) i AJD.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Capítol 3</b></td>
+                            <td><b>Despeses financeres:</b> Pagament d'interessos de deutes, préstecs o bons emesos per la Generalitat.</td>
+                            <td><b>Taxes, preus públics i altres ingressos:</b> Multes, taxes d'oposicions, preus de serveis.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Capítol 4</b></td>
+                            <td><b>Transferències corrents:</b> Diners que es donen a altres entitats sense contraprestació directa per finançar despeses corrents (ex: beques d'estudi).</td>
+                            <td><b>Transferències corrents:</b> Diners rebuts de l'Estat o de la UE per finançar el funcionament ordinari.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Capítol 5</b></td>
+                            <td><b>Fons de contingència:</b> (Només despesa) Crèdits per a necessitats imprevistes i no ajornables.</td>
+                            <td><b>Ingressos patrimonials:</b> Interessos de comptes bancaris, lloguers de locals propietat de la Generalitat.</td>
+                        </tr>
+                        <tr style="background: #f1f5f9; font-weight: 600;"><td colspan="3">OPERACIONS DE CAPITAL (Inversions / Creixement de patrimoni public)</td></tr>
+                        <tr>
+                            <td><b>Capítol 6</b></td>
+                            <td><b>Inversions reals:</b> Compra de béns inventariables. Construcció d'escoles, hospitals, carreteres, compra d'ordinadors.</td>
+                            <td><b>Alienació d'inversions reals:</b> Ingressos per la venda de patrimoni públic (venda de terrenys o edificis).</td>
+                        </tr>
+                        <tr>
+                            <td><b>Capítol 7</b></td>
+                            <td><b>Transferències de capital:</b> Subvencions concedides a ajuntaments o empreses per finançar obres o inversions.</td>
+                            <td><b>Transferències de capital:</b> Transferències rebudes d'altres entitats per finançar projectes d'inversió.</td>
+                        </tr>
+                        <tr style="background: #f1f5f9; font-weight: 600;"><td colspan="3">OPERACIONS FINANCERES (Moviments de tresoreria, crèdits i deutes)</td></tr>
+                        <tr>
+                            <td><b>Capítol 8</b></td>
+                            <td><b>Actius financers:</b> Concessió de préstecs de la Generalitat als seus empleats o compra d'accions.</td>
+                            <td><b>Actius financers:</b> Recompra d'accions o devolució dels préstecs que la Generalitat havia concedit.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Capítol 9</b></td>
+                            <td><b>Passius financers:</b> Amortització o devolució del capital de préstecs rebuts o deutes vençuts.</td>
+                            <td><b>Passius financers:</b> Ingressos obtinguts per la concessió de nous préstecs o l'emissió de deute públic.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <h2 class="section-title">4. ESTRUCTURA DE L'ESTAT D'INGRESSOS</h2>
+        <div class="data-card">
+            <p style="margin-top: 0;">L'estat d'ingressos no conté una classificació orgànica ni funcional exhaustiva (ja que els ingressos són generals i financen de forma global tota l'organització, d'acord amb el **principi de no afectació dels ingressos**).</p>
+            
+            <ul class="important-list">
+                <li><b>Classificació Orgànica (Només entitats):</b> S'identifica l'entitat a la qual van destinats els ingressos (la Generalitat o una entitat autònoma concreta).</li>
+                <li><b>Classificació Econòmica (La principal):</b> Organitzada en els 9 capítols explicats a la taula anterior. Identifica amb total claredat el recurs jurídic que genera el dret (impostos, taxes, transferències...).</li>
+            </ul>
+
+            <div class="highlight-box">
+                <p><b>⛔ EL PRINCIPIS PRESSUPOSTARIS MÉS PREGUNTATS:</b></p>
+                <p style="margin: 0; font-size: 0.95rem;"><b>• Principi de No Afectació:</b> Els ingressos es destinen de forma global a finançar totes les despeses de la Generalitat, sense que un ingrés concret pugui quedar reservat a una despesa específica (tret de les excepcions legals com les contribucions especials o transferències finalistes).</p>
+                <p style="margin: 5px 0 0 0; font-size: 0.95rem;"><b>• Principi de Pressupost Brut:</b> Els drets i les obligacions s'han de liquidar pel seu valor sencer, sense que es puguin fer compensacions o deduccions netes entre despeses i ingressos.</p>
+            </div>
+        </div>
+
+        <footer class="custom-footer">
+            © 2026 OpoGene | Creat per JOMP
+        </footer>
+    </div>
+
+</body>
+</html>

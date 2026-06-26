@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 1: Marc Constitucional | C1 Generalitat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght=300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-body: #ffffff;
+            --bg-card: #f8fafc;
+            --gencat-red: #cc0000; /* Vermell oficial Generalitat */
+            --brand-dark: #0f172a;
+            --brand-black: #020617; /* Negre pur */
+            --text-main: #0f172a;
+            --text-dim: #475569;
+            --border: #e2e8f0;
+        }
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            font-family: 'Outfit', sans-serif;
+            padding: 20px;
+            line-height: 1.6;
+            margin: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .notes-container { max-width: 900px; margin: 0 auto; }
+
+        /* Capçalera: Recuadro negre amb marc superior vermell */
+        .mission-header {
+            background: var(--brand-black);
+            color: #ffffff;
+            padding: 35px;
+            border-radius: 0 0 16px 16px;
+            margin-bottom: 40px;
+            border-top: 6px solid var(--gencat-red);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .gencat-top-label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #94a3b8;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .mission-header h1 { 
+            font-size: 1.8rem; 
+            font-weight: 800; 
+            margin: 0; 
+            letter-spacing: -0.5px; 
+            color: #ffffff; 
+        }
+        
+        .inner-red-box {
+            background: var(--gencat-red);
+            color: #ffffff;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-size: 1rem;
+            font-weight: 400;
+            border-left: 4px solid #ffffff;
+        }
+
+        .section-title {
+            border-bottom: 2px solid var(--gencat-red);
+            color: var(--brand-black);
+            font-size: 1.25rem;
+            margin: 40px 0 20px;
+            padding-bottom: 6px;
+            text-transform: uppercase;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+        }
+
+        .data-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .important-list { list-style: none; padding: 0; margin: 0; }
+        .important-list li { 
+            background: white; 
+            margin-bottom: 10px; 
+            padding: 14px; 
+            border-radius: 8px; 
+            border-left: 4px solid var(--gencat-red);
+            font-size: 0.95rem;
+            border-top: 1px solid var(--border);
+            border-right: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .table-container { overflow-x: auto; margin-top: 15px; border-radius: 8px; border: 1px solid var(--border); }
+        .level-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; background: white; }
+        .level-table th { background: var(--brand-dark); color: white; padding: 12px; text-align: left; font-weight: 700; }
+        .level-table td { border-bottom: 1px solid var(--border); padding: 12px; color: var(--text-main); }
+        .level-table tr:last-child td { border-bottom: none; }
+
+        .highlight-box {
+            background: #fff5f5;
+            border: 1px solid #fca5a5;
+            border-left: 4px solid var(--gencat-red);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .highlight-box p { margin: 8px 0; font-size: 0.95rem; }
+
+        .btn-back {
+            display: inline-block;
+            text-decoration: none;
+            color: var(--text-dim);
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: color 0.2s;
+        }
+        .btn-back:hover { color: var(--gencat-red); }
+
+        /* El peu de pàgina amb el text exacte */
+        .custom-footer {
+            text-align: center; 
+            margin-top: 60px; 
+            padding: 20px 0;
+            border-top: 1px solid var(--border);
+            font-size: 0.85rem; 
+            color: var(--text-dim); 
+            font-weight: 600;
+            letter-spacing: 0.3px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="notes-container">
+        <a href="/index.html" class="btn-back">⬅ TORNAR AL LLISTAT</a>
+
+        <header class="mission-header">
+            <div class="gencat-top-label">Generalitat de Catalunya · Administració Pública (C1)</div>
+            <h1>TEMA 1: LA CONSTITUCIÓ ESPANYOLA (CE)</h1>
+            
+            <div class="inner-red-box">
+                Marc constitucional: principis, drets i deures fonamentals i les seves garanties.
+            </div>
+        </header>
+
+        <h2 class="section-title">1. ESTRUCTURA I CONTINGUT</h2>
+        <div class="data-card">
+            <ul class="important-list">
+                <li><b>Aprovació i entrada en vigor:</b> Aprovada per les Corts Generals en sessions plenàries del Congrés i del Senat el 31 d'octubre de 1978, ratificada en referèndum el 6 de desembre de 1978, sancionada i promulgada pel Rei el 27 de desembre i entrada en vigor el 29 de desembre de 1978 (el mateix dia de la seva publicació al BOE).</li>
+                <li><b>Preàmbul:</b> No té força jurídica ni caràcter normatiu, és una declaració solemne que expressa els valors i desitjos de la Nació.</li>
+                <li><b>Títol Preliminar:</b> Articles 1 al 9 (Principis generals i dogmàtics de l'Estat).</li>
+                <li><b>Títol I:</b> Articles 10 al 55 (Drets i deures fonamentals). Eix central del tema.</li>
+                <li><b>Resta de Títols:</b> Del II al X (Organització dels poders de l'Estat, Corona, Corts, Govern, Poder Judicial, Organització Territorial i Reforma Constitucional).</li>
+                <li><b>Part Final:</b> Compta amb 4 Disposicions Addicionals, 9 Transitòries, 1 Derogatòria i 1 Final.</li>
+            </ul>
+        </div>
+
+        <h2 class="section-title">2. TÍTOL PRELIMINAR (Art. 1-9)</h2>
+        <div class="data-card">
+            <p style="margin-top: 0; font-weight: 600;">Defineix l'essència jurídica i política de l'Estat:</p>
+            <ul class="important-list">
+                <li><b>Art. 1.1:</b> Espanya es constitueix en un Estat social i democràtic de Dret. Valors superiors de l'ordenament jurídic: <b>Llibertat, Justícia, Igualtat i Pluralisme polític</b>.</li>
+                <li><b>Art. 1.2:</b> La sobirania nacional resideix en el Poble Espanyol, del qual emanen els poders de l'Estat.</li>
+                <li><b>Art. 1.3:</b> La forma política de l'Estat espanyol és la <b>Monarquia Parlamentària</b>.</li>
+                <li><b>Art. 2:</b> Es fonamenta en la indissoluble unitat de la Nació espanyola, i reconeix i garanteix el dret a l'autonomia de les nacionalitats i les regions que la integren.</li>
+                <li><b>Art. 3:</b> El castellà és la llengua espanyola oficial de l'Estat. Les altres llengües espanyoles seran també oficials en les respectives Comunitats Autònomes d'acord amb els seus Estatuts (com el cas del Català).</li>
+                <li><b>Art. 9.3:</b> Garanteix els principis constitucionals de l'Estat de Dret: <b>Principi de legalitat</b>, jerarquia normativa, publicitat de les normes, irretroactivitat de les disposicions sancionadores no favorables o restrictives de drets individuals, seguretat jurídica, responsabilitat i interdicció de l'arbitrarietat dels poders públics.</li>
+            </ul>
+        </div>
+
+        <h2 class="section-title">3. TÍTOL I: DRETS I DEURES FONAMENTALS (Art. 10-55)</h2>
+        <div class="data-card">
+            <p style="margin-top: 0;">L'<b>Art. 10</b> actua com a pòrtic del Títol I: la dignitat de la persona, els drets inviolables que li són inherents, el lliure desenvolupament de la personalitat, el respecte a la llei i als drets dels altres són el fonament de l'ordre polític i de la pau social.</p>
+            
+            <ul class="important-list" style="margin-bottom: 20px;">
+                <li><b>Capítol I (Art. 11-13):</b> Dels espanyols i els estrangers. Fixa la majoria d'edat als 18 anys (Art. 12) i regula que cap espanyol d'origen podra ser privat de la seva nacionalitat.</li>
+                <li><b>Capítol II (Art. 14-38):</b> Drets i llibertats. Conté l'article 14 (Principi d'Igualtat) i es divideix en dues Seccions crítiques per a l'examen.</li>
+                <li><b>Capítol III (Art. 39-52):</b> Principis Rectors de la Política Social i Econòmica (salut, vivenda, pensions). No són drets subjectius directes, sinó pautes que guien els poders públics.</li>
+            </ul>
+            
+            <div class="table-container">
+                <table class="level-table">
+                    <thead>
+                        <tr>
+                            <th>Capítol / Secció</th>
+                            <th>Articles</th>
+                            <th>Nivell de Garantia i Protecció</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>Capítol II, Secció 1a</b><br>(Drets Fonamentals i Llibertats Públiques)</td>
+                            <td>15 a 29</td>
+                            <td><b>Màxima protecció:</b> Vinculen tots els poders públics. Regulació només per <b>Llei Orgànica</b> (respectant el seu contingut essencial). Protecció judicial mitjançant el procediment basat en els principis de <b>preferència i sumari</b>, i tutelables en darrera instància via <b>Recurs d'Empara</b> davant el Tribunal Constitucional.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Principi d'Igualtat</b><br>(Pòrtic del Capítol II)</td>
+                            <td>14</td>
+                            <td>Protecció alta: No requereix Llei Orgànica per al seu desenvolupament, però sí gaudeix de tutela judicial pel <b>procediment preferent i sumari</b> i és totalment apte per al <b>Recurs d'Empara</b>.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Capítol II, Secció 2a</b><br>(Drets i deures dels ciutadans)</td>
+                            <td>30 a 38</td>
+                            <td>Protecció mitjana: Vinculen directament, però es regulen per <b>Llei Ordinària</b> (amb reserva de llei salvaguardant el contingut essencial). No disposen de procediment preferent/sumari ni de Recurs d'Empara (a excepció de l'objecció de consciència de l'art. 30).</td>
+                        </tr>
+                        <tr>
+                            <td><b>Capítol III</b><br>(Principis Rectors de la Política Social)</td>
+                            <td>39 a 52</td>
+                            <td>Protecció ordinària: No són drets directament al·legables davant els tribunals, sinó que han d'informar la legislació positiva, la pràctica judicial i l'actuació dels poders públics. Només podran ser al·legats d'acord amb el que disposin les lleis que els desenvolupin.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <h2 class="section-title">4. GARANTIES I SUSPENSIÓ DELS DRETS</h2>
+        <div class="data-card">
+            <p style="margin-top: 0;"><b>Garanties Institucionals (Capítol IV):</b></p>
+            <ul class="important-list" style="margin-bottom: 20px;">
+                <li><b>Art. 53:</b> Estableix la graduació de les garanties normatives i judicials explicades detalladament a la taula de dalt.</li>
+                <li><b>Art. 54:</b> Regula el <b>Defensor del Poble</b> com l'alt comissionat de les Corts Generals, designat per aquestes per a la defense dels drets de l'article 14 i del Títol I, amb la funció de supervisar l'activitat de l'Administració.</li>
+            </ul>
+            
+            <p><b>Suspensió dels Drets (Capítol V - Art. 55):</b></p>
+            <div class="highlight-box">
+                <p><b>1. Suspensió Col·lectiva (Art. 55.1):</b> Es pot declarar exclusivament quan s'acordin els estats d'<b>excepció o de setge</b> en els termes que preveu la Constitució. Els drets que es poden suspendre són: llibertat i seguretat personal (terminis de detenció, art. 17), inviolabilitat del domicili (art. 18.2), secret de les comunicacions (art. 18.3), llibertat de circulació i residència (art. 19), llibertats d'expressió i informació (art. 20.1.a, d i 20.5), drets de reunió i manifestació (art. 21), dret de vaga (art. 28.2) i dret de conflicte col·lectiu (art. 37.2).</p>
+                <p><b>2. Suspensió Individual (Art. 55.2):</b> Una Llei Orgànica pot determinar la forma i els casos en què, de forma individual i amb la intervenció judicial necessària, els drets corresponents als articles <b>17.2 (durada de la detenció)</b>, <b>18.2 (domicili)</b> i <b>18.3 (comunicacions)</b> poden ser suspesos per a investigacions de <b>bandes armades o terroristes</b>.</p>
+            </div>
+        </div>
+
+        <!-- Peu de pàgina esmenat i exacte -->
+        <footer class="custom-footer">
+            © 2026 OpoGene | Creat per JOMP
+        </footer>
+    </div>
+
+</body>
+</html>

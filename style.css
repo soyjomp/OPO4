@@ -1,0 +1,126 @@
+/* --- VARIABLES DE DISSENY --- */
+:root {
+    --bg-body: #ffffff;
+    --bg-card: #f8fafc;
+    --bg-item: #ffffff;
+    
+    /* Identitat Gencat */
+    --accent: #C5112E;
+    --accent-dark: #9A0D24;
+    --accent-glow: #fca5a5;
+    --neutral-dark: #1F1F24;
+    --text-main: #111827;
+    --text-dim: #475569;
+    
+    --success: #B45309;
+    --success-bg: #FEF3C7;
+    --error: #C5112E;
+    --error-bg: #FEE2E2;
+    
+    --glow: 0 4px 15px rgba(197, 17, 46, 0.2);
+    --border: rgba(31, 31, 36, 0.12);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    background-color: var(--bg-body);
+    color: var(--text-main);
+    font-family: 'Outfit', sans-serif;
+    line-height: 1.6;
+    padding-bottom: 50px;
+}
+
+.container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+/* --- NAVBAR --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    margin-bottom: 40px;
+    border-bottom: 2px solid var(--neutral-dark);
+}
+
+.logo { font-weight: 800; font-size: 1.5rem; letter-spacing: -1px; color: var(--neutral-dark); }
+.logo span { color: var(--accent); }
+.nav-links { display: flex; gap: 20px; list-style: none; }
+.nav-links a { color: var(--text-dim); text-decoration: none; font-size: 0.9rem; font-weight: 700; transition: 0.3s; text-transform: uppercase; }
+.nav-links a:hover { color: var(--accent); }
+
+/* --- HERO --- */
+.hero { 
+    text-align: center; margin-bottom: 60px; background: linear-gradient(135deg, var(--neutral-dark) 0%, #2D2D35 100%);
+    padding: 50px 20px; border-radius: 20px; color: white; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+.hero h1 { font-size: 3.2rem; font-weight: 800; line-height: 1.1; margin-bottom: 15px; }
+.hero h1 span { color: var(--accent); }
+.hero p { color: #E4E4E7; font-size: 1.1rem; margin-bottom: 25px; font-weight: 400; }
+.stat-banner { display: inline-flex; align-items: center; background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.2); padding: 10px 30px; border-radius: 50px; gap: 12px; }
+.stat-number { color: white; background-color: var(--accent); padding: 2px 14px; border-radius: 20px; font-weight: 800; font-size: 1.1rem; }
+.stat-label { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 800; color: #D4D4D8; }
+
+.section-title { 
+    font-size: 0.85rem; text-transform: uppercase; color: var(--neutral-dark); letter-spacing: 3px; 
+    margin-bottom: 20px; display: block; font-weight: 900; border-left: 4px solid var(--accent); padding-left: 10px;
+}
+
+/* --- BLOCS --- */
+.block-card { background: var(--bg-card); border-radius: 20px; margin-bottom: 20px; border: 1px solid var(--border); overflow: hidden; }
+summary { padding: 22px 28px; list-style: none; cursor: pointer; font-weight: 800; font-size: 1.1rem; display: flex; justify-content: space-between; align-items: center; background: linear-gradient(to right, #ffffff, #f8fafc); }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: '▼'; color: var(--accent); font-size: 0.8rem; transition: 0.4s; }
+details[open] summary::after { transform: rotate(180deg); }
+
+.topic-grid { display: grid; grid-template-columns: 1fr; gap: 15px; padding: 25px; background: #ffffff; }
+@media (min-width: 768px) { .topic-grid { grid-template-columns: repeat(3, 1fr); } }
+
+.topic-card { 
+    background: var(--bg-item); border-radius: 16px; padding: 18px; border: 1px solid var(--border); 
+    border-top: 4px solid #cbd5e1; display: flex; flex-direction: column; justify-content: space-between; transition: 0.3s;
+}
+.topic-card:hover { transform: translateY(-5px); border-color: rgba(197, 17, 46, 0.3); box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05); }
+
+.topic-info h3 { font-size: 0.85rem; margin-bottom: 10px; line-height: 1.4; min-height: 4.5em; color: var(--text-main); font-weight: 700; }
+.stats-badge { font-size: 0.65rem; background: #f1f5f9; padding: 5px 10px; border-radius: 20px; color: var(--text-dim); font-weight: 800; }
+.progress-container { margin-bottom: 15px; }
+.bar-bg { width: 100%; height: 8px; background: #f1f5f9; border-radius: 10px; overflow: hidden; margin-top: 5px; border: 1px solid #e2e8f0; }
+.bar-fill { height: 100%; background: #cbd5e1; width: 0%; transition: width 0.5s ease; }
+
+.actions { display: flex; flex-direction: column; gap: 8px; }
+.btn { padding: 10px; border-radius: 8px; font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 0.75rem; text-align: center; text-decoration: none; text-transform: uppercase; cursor: pointer; border: none; transition: 0.2s; }
+.btn-test { background: var(--accent); color: white; }
+.btn-test:hover { background: var(--accent-dark); }
+.btn-docs { background: #f1f5f9; color: var(--text-dim); border: 1px solid #e2e8f0; }
+.btn-docs:hover { background: #e2e8f0; color: var(--text-main); }
+
+/* --- EXÀMENS HISTÒRICS --- */
+.exam-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
+@media (min-width: 768px) { .exam-grid { grid-template-columns: repeat(3, 1fr); } }
+
+.exam-card { 
+    background: #ffffff; border: 1px solid var(--border); border-radius: 20px; padding: 20px; 
+    display: flex; flex-direction: column; justify-content: space-between; transition: 0.3s;
+}
+.exam-card:hover { border-color: var(--accent); box-shadow: var(--glow); transform: translateY(-3px); }
+.exam-header { font-size: 0.7rem; font-weight: 900; color: var(--accent); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px; }
+.exam-title { font-size: 0.8rem; font-weight: 700; color: var(--text-main); line-height: 1.3; margin-bottom: 15px; flex-grow: 1; }
+
+.exam-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.btn-mini { 
+    padding: 8px 4px; font-size: 0.65rem; font-weight: 800; text-align: center; text-decoration: none; 
+    border-radius: 50px; transition: 0.2s; text-transform: uppercase; letter-spacing: 0.5px;
+}
+.btn-fichas { background: #f1f5f9; color: var(--text-dim); }
+.btn-fichas:hover { background: #e2e8f0; }
+.btn-test { background: var(--accent); color: white; }
+.btn-test:hover { background: var(--accent-dark); }
+
+/* --- THE VAULT & FOOTER --- */
+.vault-card { background: linear-gradient(135deg, #000000, var(--neutral-dark)); padding: 50px; border-radius: 30px; text-align: center; margin-top: 50px; color: white; border-top: 5px solid var(--accent); }
+.btn-ultra { background: var(--accent); color: #ffffff; padding: 18px 50px; border-radius: 50px; font-weight: 900; border: none; cursor: pointer; margin-top: 30px; font-size: 1.1rem; text-transform: uppercase; transition: 0.2s; }
+.btn-ultra:hover { background: var(--accent-dark); transform: scale(1.02); }
+.btn-reset { background: transparent; border: 2px dashed var(--error); color: var(--error); padding: 12px 30px; border-radius: 50px; font-weight: 800; margin: 30px auto; display: block; cursor: pointer; transition: all 0.2s; }
+.btn-reset:hover { background: var(--error-bg); }
+footer { text-align: center; margin-top: 60px; padding: 40px 0; border-top: 1px solid var(--border); }

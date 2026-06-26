@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 6: Organització de la Generalitat i Sector Públic | C1 Generalitat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght=300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-body: #ffffff;
+            --bg-card: #f8fafc;
+            --gencat-red: #cc0000; /* Vermell oficial Generalitat */
+            --brand-dark: #0f172a;
+            --brand-black: #020617; /* Negre pur */
+            --text-main: #0f172a;
+            --text-dim: #475569;
+            --border: #e2e8f0;
+        }
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            font-family: 'Outfit', sans-serif;
+            padding: 20px;
+            line-height: 1.6;
+            margin: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .notes-container { max-width: 900px; margin: 0 auto; }
+
+        /* Capçalera: Recuadro negre amb marc superior vermell */
+        .mission-header {
+            background: var(--brand-black);
+            color: #ffffff;
+            padding: 35px;
+            border-radius: 0 0 16px 16px;
+            margin-bottom: 40px;
+            border-top: 6px solid var(--gencat-red);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .gencat-top-label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #94a3b8;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .mission-header h1 { 
+            font-size: 1.8rem; 
+            font-weight: 800; 
+            margin: 0; 
+            letter-spacing: -0.5px; 
+            color: #ffffff; 
+        }
+        
+        .inner-red-box {
+            background: var(--gencat-red);
+            color: #ffffff;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-size: 1rem;
+            font-weight: 400;
+            border-left: 4px solid #ffffff;
+        }
+
+        .section-title {
+            border-bottom: 2px solid var(--gencat-red);
+            color: var(--brand-black);
+            font-size: 1.25rem;
+            margin: 40px 0 20px;
+            padding-bottom: 6px;
+            text-transform: uppercase;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+        }
+
+        .data-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .important-list { list-style: none; padding: 0; margin: 0; }
+        .important-list li { 
+            background: white; 
+            margin-bottom: 10px; 
+            padding: 14px; 
+            border-radius: 8px; 
+            border-left: 4px solid var(--gencat-red);
+            font-size: 0.95rem;
+            border-top: 1px solid var(--border);
+            border-right: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .table-container { overflow-x: auto; margin-top: 15px; border-radius: 8px; border: 1px solid var(--border); }
+        .level-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; background: white; }
+        .level-table th { background: var(--brand-dark); color: white; padding: 12px; text-align: left; font-weight: 700; }
+        .level-table td { border-bottom: 1px solid var(--border); padding: 12px; color: var(--text-main); }
+        .level-table tr:last-child td { border-bottom: none; }
+
+        .highlight-box {
+            background: #fff5f5;
+            border: 1px solid #fca5a5;
+            border-left: 4px solid var(--gencat-red);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .highlight-box p { margin: 8px 0; font-size: 0.95rem; }
+
+        .btn-back {
+            display: inline-block;
+            text-decoration: none;
+            color: var(--text-dim);
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: color 0.2s;
+        }
+        .btn-back:hover { color: var(--gencat-red); }
+
+        .custom-footer {
+            text-align: center; 
+            margin-top: 60px; 
+            padding: 20px 0;
+            border-top: 1px solid var(--border);
+            font-size: 0.85rem; 
+            color: var(--text-dim); 
+            font-weight: 600;
+            letter-spacing: 0.3px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="notes-container">
+        <a href="/index.html" class="btn-back">⬅ TORNAR AL LLISTAT</a>
+
+        <header class="mission-header">
+            <div class="gencat-top-label">Generalitat de Catalunya · Administració Pública (C1)</div>
+            <h1>TEMA 6: L'ORGANITZACIÓ DE LA GENERALITAT</h1>
+            
+            <div class="inner-red-box">
+                L'organització de l'Administració de la Generalitat de Catalunya: principis generals i òrgans. Els departaments: estructura i atribucions. El sector públic institucional.
+            </div>
+        </header>
+
+        <h2 class="section-title">1. PRINCIPIS GENERALS D'ORGANITZACIÓ (Llei 26/2010)</h2>
+        <div class="data-card">
+            <p style="margin-top: 0; font-weight: 600;">L'Administració de la Generalitat és una única personalitat jurídica que s'organitza sota un seguit de principis de funcionament de caràcter obligatori:</p>
+            <ul class="important-list">
+                <li><b>Eficàcia, eficiència i economia:</b> Optimització dels recursos públics i consecució d'objectius fixats amb el mínim cost possible.</li>
+                <li><b>Proporcionalitat:</b> Els mitjans organitzatius emprats han de ser estrictament proporcionals a les finalitats públiques que es volen assolir.</li>
+                <li><b>Jerarquia:</b> Organització piramidal on els òrgans inferiors estan subordinats i reben instruccions dels superiors.</li>
+                <li><b>Descentralització i Desconcentració:</b> Diferència clau en exàmens: La *descentralització* trasllada la competència a una altra persona jurídica diferent (ex. un ens institucional); la *desconcentració* trasllada la competència a un òrgan inferior dins de la mateixa persona jurídica.</li>
+                <li><b>Coordinació i cooperació:</b> Deure de treballar de manera conjunta amb altres administracions (com l'Estat o els Ajuntaments) i entre els propis Departaments.</li>
+            </ul>
+        </div>
+
+        <h2 class="section-title">2. ELS DEPARTAMENTS: ESTRUCTURA INTERNA</h2>
+        <div class="data-card">
+            <p style="margin-top: 0;">L'Administració de la Generalitat s'estructura en <b>Departaments</b>. La creació, denominació i l'àmbit de competències de cada Departament correspon exclusivament al <b>President/a de la Generalitat</b> mitjançant un Decret.</p>
+            
+            <p style="font-weight: 600; margin-top: 15px;">Classificació dels òrgans de l'Administració (*Pregunta fixa de l'examen C1*):</p>
+            
+            <div class="table-container">
+                <table class="level-table">
+                    <thead>
+                        <tr>
+                            <th>Categoria d'Òrgan</th>
+                            <th>Càrrecs que l'integren</th>
+                            <th>Funció Principal en el Departament</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>Òrgans Superiors</b></td>
+                            <td>El <b>Conseller/a</b> i el <b>Secretari/a General</b>.</td>
+                            <td>Direcció política, fixació d'objectius estratègics, representació i màxima potestat normativa interna.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Òrgans Directius</b></td>
+                            <td>Els <b>Directors/es Generals</b> i els <b>Directors/es de Serveis</b>.</td>
+                            <td>Gestió operativa, execució dels programes del departament i comandament d'unitats de caràcter tècnic.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Unitats Administratives</b></td>
+                            <td><b>Subdireccions Generals</b>, <b>Serveis</b>, <b>Seccions</b> i <b>Negociats</b>.</td>
+                            <td>Execució diària dels tràmits i funcions administratives bàsiques (els funcionaris C1 s'adscriuen aquí).</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="highlight-box" style="margin-top: 20px;">
+                <p><b>Nota jeràrquica sobre les Unitats Administratives:</b> L'ordre de major a menor rang jeràrquic és: <b>Subdirecció General ➔ Servei ➔ Secció ➔ Negociat</b>. Vigila, perquè la Subdirecció General <i>no</i> es considera un òrgan directiu propi de la Generalitat, sinó una unitat administrativa d'alt nivell.</p>
+            </div>
+        </div>
+
+        <h2 class="section-title">3. PRINCIPALS ATRIBUCIONS DE L'ESTRUCTURA</h2>
+        <div class="data-card">
+            <p style="margin-top: 0; font-weight: 600;">Atribucions de les figures del Departament:</p>
+            <ul class="important-list">
+                <li><b>Conseller/a:</b> Exerceix la representació del Departament, dicta disposicions (Ordres), aprova despeses fins a determinats límits econòmics, resol recursos i posa fi a la via administrativa.</li>
+                <li><b>Secretari/a General:</b> És la segona autoritat del departament. Exerceix la prefectura de personal, gestiona els serveis comuns, els pressupostos del departament i coordina les direccions generals.</li>
+                <li><b>Director/a General:</b> Dirigeix i gestiona un sector concret d'activitat homogeni del Departament (ex: Direcció General de Transports).</li>
+                <li><b>Òrgans Territorials:</b> Per garantir la presència al territori, els departaments s'estructuren en <b>Serveis Territorials</b> encapçalats per un Director/a Territorial (a Girona, Lleida, Tarragona, Terres de l'Ebre i Catalunya Central).</li>
+            </ul>
+        </div>
+
+        <h2 class="section-title">4. EL SECTOR PÚBLIC INSTITUCIONAL</h2>
+        <div class="data-card">
+            <p style="margin-top: 0;">El sector públic institucional està format per entitats amb personalitat jurídica pròpia, creades o vinculades a la Generalitat per exercir funcions en règim de descentralització funcional:</p>
+            <ul class="important-list">
+                <li><b>Organismes Autònoms:</b> Entitats de dret públic amb personalitat jurídica pròpia i patrimoni independent, que actuen amb submissió al dret administratiu. Executen programes públics de foment o gestió de serveis públics. (Ex: Servei Català de Trànsit).</li>
+                <li><b>Entitats de Dret Públic sotmeses a dret privat:</b> Personalitat pública, però que actuen majoritàriament segons el dret privat (civil, mercantil, laboral) per aconseguir una gestió més àgil en el mercat. (Ex: Institut Català de Finances).</li>
+                <li><b>Societats Mercantils de la Generalitat:</b> Societats de capital privat on la Generalitat té una participació majoritària (més del 50%). Es regeixen totalment pel dret privat. (Ex: Ferrocarrils de la Generalitat de Catalunya - FGC).</li>
+                <li><b>Consorcis:</b> Entitats públiques creades per la Generalitat conjuntament amb altres administracions públiques (com Ajuntaments) o entitats privades sense ànim de lucre, per a finalitats d'interès comú.</li>
+                <li><b>Fundacions del sector públic:</b> Entitats constituïdes sense ànim de lucre i amb finançament majoritari de la Generalitat per a fins d'interès general.</li>
+            </ul>
+        </div>
+
+        <footer class="custom-footer">
+            © 2026 OpoGene | Creat per JOMP
+        </footer>
+    </div>
+
+</body>
+</html>

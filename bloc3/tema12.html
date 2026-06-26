@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 2: Funcionament Electrònic del Sector Públic | C1 Generalitat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght=300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-body: #ffffff;
+            --bg-card: #f8fafc;
+            --gencat-red: #cc0000; /* Vermell oficial Generalitat */
+            --brand-dark: #0f172a;
+            --brand-black: #020617; /* Negre pur */
+            --text-main: #0f172a;
+            --text-dim: #475569;
+            --border: #e2e8f0;
+        }
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            font-family: 'Outfit', sans-serif;
+            padding: 20px;
+            line-height: 1.6;
+            margin: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .notes-container { max-width: 900px; margin: 0 auto; }
+
+        /* Capçalera: Recuadro negre amb marc superior vermell */
+        .mission-header {
+            background: var(--brand-black);
+            color: #ffffff;
+            padding: 35px;
+            border-radius: 0 0 16px 16px;
+            margin-bottom: 40px;
+            border-top: 6px solid var(--gencat-red);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .gencat-top-label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #94a3b8;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .mission-header h1 { 
+            font-size: 1.8rem; 
+            font-weight: 800; 
+            margin: 0; 
+            letter-spacing: -0.5px; 
+            color: #ffffff; 
+        }
+        
+        .inner-red-box {
+            background: var(--gencat-red);
+            color: #ffffff;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-size: 1rem;
+            font-weight: 400;
+            border-left: 4px solid #ffffff;
+        }
+
+        .section-title {
+            border-bottom: 2px solid var(--gencat-red);
+            color: var(--brand-black);
+            font-size: 1.25rem;
+            margin: 40px 0 20px;
+            padding-bottom: 6px;
+            text-transform: uppercase;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+        }
+
+        .data-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .important-list { list-style: none; padding: 0; margin: 0; }
+        .important-list li { 
+            background: white; 
+            margin-bottom: 10px; 
+            padding: 14px; 
+            border-radius: 8px; 
+            border-left: 4px solid var(--gencat-red);
+            font-size: 0.95rem;
+            border-top: 1px solid var(--border);
+            border-right: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .table-container { overflow-x: auto; margin-top: 15px; border-radius: 8px; border: 1px solid var(--border); }
+        .level-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; background: white; }
+        .level-table th { background: var(--brand-dark); color: white; padding: 12px; text-align: left; font-weight: 700; }
+        .level-table td { border-bottom: 1px solid var(--border); padding: 12px; color: var(--text-main); }
+        .level-table tr:last-child td { border-bottom: none; }
+
+        .highlight-box {
+            background: #fff5f5;
+            border: 1px solid #fca5a5;
+            border-left: 4px solid var(--gencat-red);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .highlight-box p { margin: 8px 0; font-size: 0.95rem; }
+
+        .btn-back {
+            display: inline-block;
+            text-decoration: none;
+            color: var(--text-dim);
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: color 0.2s;
+        }
+        .btn-back:hover { color: var(--gencat-red); }
+
+        .custom-footer {
+            text-align: center; 
+            margin-top: 60px; 
+            padding: 20px 0;
+            border-top: 1px solid var(--border);
+            font-size: 0.85rem; 
+            color: var(--text-dim); 
+            font-weight: 600;
+            letter-spacing: 0.3px;
+        }
+        
+        h3 { font-size: 1.05rem; margin: 15px 0 5px 0; color: var(--brand-dark); font-weight: 700; }
+    </style>
+</head>
+<body>
+
+    <div class="notes-container">
+        <a href="/index.html" class="btn-back">⬅ TORNAR AL LLISTAT</a>
+
+        <header class="mission-header">
+            <div class="gencat-top-label">Generalitat de Catalunya · Administració Pública (C1)</div>
+            <h1>TEMA 2: EL FUNCIONAMENT ELECTRÒNIC DEL SECTOR PÚBLIC</h1>
+            
+            <div class="inner-red-box">
+                La seu electrònica, el portal d'Internet, identificació de les administracions, actuació automatitzada, sistemes de signatura, el personal al servei, interoperabilitat i arxiu electrònic.
+            </div>
+        </header>
+
+        <h2 class="section-title">1. LA SEU ELECTRÒNICA I EL PORTAL D'INTERNET (Art. 38-39)</h2>
+        <div class="data-card">
+            <p style="margin-top: 0;">La Llei 40/2015 diferencia clarament l'entorn formal i segur del mer espai informatiu de l'Administració:</p>
+            
+            <ul class="important-list">
+                <li><b>Seu electrònica (Art. 38):</b> És l'adreça electrònica disponible per a la ciutadania a través de xarxes de telecomunicacions, la titularitat, gestió i administració de la qual correspon a una Administració Pública. <b>L'establiment d'una seu electrònica comporta la responsabilitat de l'Administració titular respecte de la integritat, veracitat i actualització de la informació i els serveis</b>.</li>
+                <li><b>Portal d'Internet (Art. 39):</b> És el punt d'accés electrònic (web corporativa) que conté informació institucional o de servei, però que <i>no</i> té els requisits de seguretat jurídica ni identificació formal d'una seu electrònica.</li>
+                <li><b>Canal oficial Gencat:</b> Cada seu electrònica ha de disposar d'un sistema que garanteixi la identificació de la seu mitjançant un certificat de seu electrònica o segell electrònic d'actuació certificada.</li>
+            </ul>
+        </div>
+
+        <h2 class="section-title">2. IDENTIFICACIÓ I ACTUACIÓ ADMINISTRATIVA AUTOMATITZADA (Art. 40-42)</h2>
+        <div class="data-card">
+            <p style="margin-top: 0;">Les administracions públiques s'han d'identificar de forma digital quan operen electrònicament. Es distingeixen dues opcions operatives:</p>
+
+            <h3>A. Identificació de les Administracions Públiques (Art. 40)</h3>
+            <p>Es fa mitjançant l'ús de sistemes de <b>segell electrònic</b> basats en certificats que reuneixin els requisits de la legislació de signatura electrònica, incloent el número d'identificació fiscal (NIF) i la denominació de l'òrgan.</p>
+
+            <h3>B. L'Actuació Administrativa Automatitzada (Art. 41 - *Pregunta Estrella*)</h3>
+            <div class="highlight-box">
+                <p><b>Definició legal:</b> S'entén per actuació administrativa automatitzada qualsevol acte o actuació duta a terme íntegrament per una Administració Pública a través d'un sistema informàtic programat prèviament, <b>sense que hi hagi d'intervenir de forma directa cap persona física o funcionari</b> en el moment precís de l'emissió (ex: generació automàtica d'un volant d'empadronament o d'un rebut de taxes).</p>
+            </div>
+
+            <p style="font-weight: 600; margin-top: 15px;">Sistemes de signatura per a l'actuació automatitzada (Art. 42):</p>
+            <p>Per a la signatura d'aquests actes automatitzats, cada Administració només pot utilitzar els dos següents sistemes:</p>
+            <ul class="important-list">
+                <li><b>1. Segell electrònic d'òrgan o entitat:</b> Vinculat al servei informàtic que genera l'actuació de manera interna.</li>
+                <li><b>2. Codi Segur de Verificació (CSV):</b> Codi alfanumèric vinculat al document que permet contrastar-ne l'autenticitat accedint a la seu electrònica corresponent. *(Molt utilitzat per comprovar impressions en paper de documents que eren natius digitals)*.</li>
+            </ul>
+        </div>
+
+        <h2 class="section-title">3. SIGNATURA ELECTRÒNICA DEL PERSONAL PÚBLIC (Art. 43)</h2>
+        <div class="data-card">
+            <p style="margin-top: 0;">Els funcionaris i el personal laboral requereixen mecanismes de validació per als actes ordinaris (no automatitzats):</p>
+            
+            <ul class="important-list">
+                <li><b>Sistemes d'identificació:</b> La signatura del personal al servei de les administracions públiques s'ha de fer mitjançant un sistema basat en un <b>certificat d'empleat públic</b> (T-CAT a Catalunya) o un altre sistema d'identificació que la llei determini.</li>
+                <li><b>Vinculació d'ús:</b> Aquests certificats només es poden fer servir per a l'exercici de les funcions pròpies del lloc de treball. Les dades del certificat han de fer constar el NIF de la persona física, el nom de l'Administració on treballa i, opcionalment, el lloc o càrrec que ocupa.</li>
+            </ul>
+        </div>
+
+        <h2 class="section-title">4. INTEROPERABILITAT I ENTORNS TANCATS DE COMUNICACIÓ (Art. 44)</h2>
+        <div class="data-card">
+            <p style="margin-top: 0;">Per garantir l'agilitat administrativa i que les dades flueixin de forma segura entre diferents departaments o entitats públiques:</p>
+            
+            <div class="table-container">
+                <table class="level-table">
+                    <thead>
+                        <tr>
+                            <th>Concepte d'Estudi</th>
+                            <th>Regla Jurídica / Requisit de la Llei 40/2015</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>Interoperabilitat (Esquema Nacional)</b></td>
+                            <td>Capacitat dels sistemes d'informació de compartir dades i permetre l'intercanvi de coneixement entre administracions públiques. Es desplega mitjançant l'**Esquema Nacional d'Interoperabilitat (ENI)**.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Entorns tancats de comunicació</b></td>
+                            <td>Quan els documents electrònics es transmeten per xarxes de comunicació tancades i protegides, prèviament acordades entre les administracions. <b>Es consideren vàlides les signatures en aquests entorns sense necessitat de certificat digital de tercers</b>, sempre que es garanteixi l'autenticitat de l'emissor i receptor.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <h2 class="section-title">5. L'ARXIU ELECTRÒNIC DE DOCUMENTS (Art. 46)</h2>
+        <div class="data-card">
+            <p style="margin-top: 0;">Tots els documents utilitzats en un procediment administratiu s'han de conservar de forma digitalitzada seguint estrictes criteris de custòdia:</p>
+            
+            <ul class="important-list">
+                <li><b>Obligatorietat d'emmagatzematge:</b> Totes les administracions públiques tenen l'obligació de mantenir un **arxiu electrònic únic** dels documents que formen part d'expedients administratius.</li>
+                <li><b>Criteris de seguretat (Esquema Nacional de Seguretat - ENS):</b> Els mitjans o suports en què s'emmagatzemen els documents han de comptar amb sistemes de seguretat que garanteixin: la integritat de les dades, l'autenticitat, la confidencialitat, la qualitat, la protecció i la **conservació a llarg termini** davant l'obsolescència dels formats informàtics.</li>
+                <li><b>Eliminació/Destrucció de paper:</b> Els documents originals en paper dels quals s'hagi obtingut una còpia electrònica autèntica fidel i segura <b>es poden destruir</b>, d'acord amb els calendaris de conservació i eliminació dictats per la Comissió de Documentació de la Generalitat de Catalunya.</li>
+            </ul>
+        </div>
+
+        <footer class="custom-footer">
+            © 2026 OpoGene | Creat per JOMP
+        </footer>
+    </div>
+
+</body>
+</html>

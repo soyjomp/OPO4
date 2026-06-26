@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 5: Drets, Seguretat i Violacions de Dades | C1 Generalitat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght=300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-body: #ffffff;
+            --bg-card: #f8fafc;
+            --gencat-red: #cc0000; /* Vermell oficial Generalitat */
+            --brand-dark: #0f172a;
+            --brand-black: #020617; /* Negre pur */
+            --text-main: #0f172a;
+            --text-dim: #475569;
+            --border: #e2e8f0;
+        }
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            font-family: 'Outfit', sans-serif;
+            padding: 20px;
+            line-height: 1.6;
+            margin: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .notes-container { max-width: 900px; margin: 0 auto; }
+
+        /* Capçalera: Recuadro negre amb marc superior vermell */
+        .mission-header {
+            background: var(--brand-black);
+            color: #ffffff;
+            padding: 35px;
+            border-radius: 0 0 16px 16px;
+            margin-bottom: 40px;
+            border-top: 6px solid var(--gencat-red);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .gencat-top-label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #94a3b8;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .mission-header h1 { 
+            font-size: 1.8rem; 
+            font-weight: 800; 
+            margin: 0; 
+            letter-spacing: -0.5px; 
+            color: #ffffff; 
+        }
+        
+        .inner-red-box {
+            background: var(--gencat-red);
+            color: #ffffff;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-size: 1rem;
+            font-weight: 400;
+            border-left: 4px solid #ffffff;
+        }
+
+        .section-title {
+            border-bottom: 2px solid var(--gencat-red);
+            color: var(--brand-black);
+            font-size: 1.25rem;
+            margin: 40px 0 20px;
+            padding-bottom: 6px;
+            text-transform: uppercase;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+        }
+
+        .data-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .important-list { list-style: none; padding: 0; margin: 0; }
+        .important-list li { 
+            background: white; 
+            margin-bottom: 10px; 
+            padding: 14px; 
+            border-radius: 8px; 
+            border-left: 4px solid var(--gencat-red);
+            font-size: 0.95rem;
+            border-top: 1px solid var(--border);
+            border-right: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .table-container { overflow-x: auto; margin-top: 15px; border-radius: 8px; border: 1px solid var(--border); }
+        .level-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; background: white; }
+        .level-table th { background: var(--brand-dark); color: white; padding: 12px; text-align: left; font-weight: 700; }
+        .level-table td { border-bottom: 1px solid var(--border); padding: 12px; color: var(--text-main); }
+        .level-table tr:last-child td { border-bottom: none; }
+
+        .highlight-box {
+            background: #fff5f5;
+            border: 1px solid #fca5a5;
+            border-left: 4px solid var(--gencat-red);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .highlight-box p { margin: 8px 0; font-size: 0.95rem; }
+
+        .btn-back {
+            display: inline-block;
+            text-decoration: none;
+            color: var(--text-dim);
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: color 0.2s;
+        }
+        .btn-back:hover { color: var(--gencat-red); }
+
+        .custom-footer {
+            text-align: center; 
+            margin-top: 60px; 
+            padding: 20px 0;
+            border-top: 1px solid var(--border);
+            font-size: 0.85rem; 
+            color: var(--text-dim); 
+            font-weight: 600;
+            letter-spacing: 0.3px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="notes-container">
+        <a href="/index.html" class="btn-back">⬅ TORNAR AL LLISTAT</a>
+
+        <header class="mission-header">
+            <div class="gencat-top-label">Generalitat de Catalunya · Administració Pública (C1)</div>
+            <h1>TEMA 5: DRETS, SEGURETAT I VIOLACIONS DE DADES</h1>
+            
+            <div class="inner-red-box">
+                El dret d'informació. Els drets de les persones interessades. El delegat de protecció de dades. Mesures de seguretat. Les notificacions de violacions de seguretat.
+            </div>
+        </header>
+
+        <h2 class="section-title">1. EL DRET D'INFORMACIÓ (Art. 13 i 14 RGPD)</h2>
+        <div class="data-card">
+            <p style="margin-top: 0; font-weight: 600;">Quan l'Administració recull dades personals, té l'obligació estricta d'informar els ciutadans de forma transparent, clara i accessible.</p>
+            
+            <p style="margin-bottom: 10px;">A la pràctica de la Generalitat s'utilitza el <b>sistema d'informació per capes</b>:</p>
+            <ul class="important-list">
+                <li><b>Primera capa (Informació bàsica):</b> Es mostra de forma immediata (en el mateix formulari). Ha de contenir: la identitat del responsable, la finalitat del tractament, la base legal i com exercir els drets.</li>
+                <li><b>Segona capa (Informació detallada):</b> Un enllaç web o text annex on s'explica tota la resta de la informació de manera exhaustiva (terminis de conservació, transferències internacionals, dades del DPD, etc.).</li>
+            </ul>
+
+            <div class="highlight-box">
+                <p><b>Excepcions al deure d'informar (Art. 14.5 RGPD):</b> Si les dades <i>no</i> s'han obtingut directament de l'interessat, l'Administració no té l'obligació d'informar-lo si: l'interessat ja disposa d'aquesta informació, si la comunicació és impossible o requereix un esforç desproporcionat, o si el registre/comunicació està expressament regulat per una llei.</p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. EXERCICI DE DRETS DE LES PERSONES INTERESSADES</h2>
+        <div class="data-card">
+            <p style="margin-top: 0;">L'Administració de la Generalitat té l'obligació de tramitar i resoldre les sol·licituds dels drets regulats pel RGPD (Accés, Rectificació, Supressió, Limitació, Portabilitat i Oposició):</p>
+            <ul class="important-list">
+                <li><b>Forma:</b> Ha de ser un procediment senzill, accessible i totalment <b>gratuït</b> per al ciutadà.</li>
+                <li><b>Termini de resposta general:</b> El responsable ha de respondre en el termini màxim de <b>1 mes</b> des de la recepció de la sol·licitud.</li>
+                <li><b>Pròrroga:</b> Aquest termini es pot prorrogar <b>2 mesos més</b> si és necessari, tenint en compte la complexitat i el nombre de sol·licituds. S'ha d'informar l'interessat d'aquesta pròrroga i dels seus motius dins del primer mes.</li>
+                <li><b>Inacció de l'Administració:</b> Si l'Administració no respon o denega el dret, el ciutadà pot presentar una reclamació de tutela de drets davant l'<b>Autoritat Catalana de Protecció de Dades (APDCAT)</b>.</li>
+            </ul>
+        </div>
+
+        <h2 class="section-title">3. EL DELEGAT DE PROTECCIÓ DE DADES (DPD)</h2>
+        <div class="data-card">
+            <p style="margin-top: 0;">El Delegat de Protecció de Dades (DPD o DPO) és una figura clau en el sector públic. L'Art. 37 del RGPD estableix que la seva designació és <b>obligatòria per a totes les autoritats i organismes públics</b>.</p>
+            
+            <div class="table-container">
+                <table class="level-table">
+                    <thead>
+                        <tr>
+                            <th>Àmbit / Característica</th>
+                            <th>Règim jurídic i condicions del DPD en l'Administració</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>Posició organitzativa</b></td>
+                            <td>Ha de dependre directament del nivell directiu més alt del responsable (Conseller/a o Secretari/a General), actuant amb total independència funcional.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Garantia d'independència</b></td>
+                            <td><b>No pot ser destituït ni sancionat</b> pel responsable per exercir les seves funcions. Això blinda la seva objectivitat.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Funcions clau</b></td>
+                            <td>Informar i assessorar el personal de l'Administració; supervisar el compliment del RGPD; assessorar en l'Avaluació d'Impacte (AIPD) i actuar com a punt de contacte amb l'APDCAT.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Publicitat</b></td>
+                            <td>Les dades de contacte del DPD han de ser públiques per als ciutadans i s'han de comunicar formalment a l'APDCAT.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <h2 class="section-title">4. MESURES DE SEGURETAT EN EL TRACTAMENT</h2>
+        <div class="data-card">
+            <p style="margin-top: 0;">L'Administració ha d'aplicar mesures tècniques i organitzatives adequades per garantir un nivell de seguretat adaptat al risc del tractament (Principi de integritat i confidencialitat):</p>
+            <ul class="important-list">
+                <li><b>Mesures tècniques essencials:</b> La pseudonimització i el xifratge de dades personals; la capacitat de garantir la confidencialitat, integritat, disponibilitat i resiliència permanents dels sistemes de tractament.</li>
+                <li><b>Restauració:</b> La capacitat de restaurar la disponibilitat i l'accés a les dades personals de forma ràpida en cas d'incident físic o tècnic (còpies de seguretat).</li>
+                <li><b>L'Esquema Nacional de Seguretat (ENS):</b> En l'àmbit de les administracions públiques de l'Estat, les mesures de seguretat obligatòries estan determinades per l'ENS, que classifica els sistemes en nivells (Bàsic, Mitjà, Alt) segons l'impacte d'un incident.</li>
+            </ul>
+        </div>
+
+        <h2 class="section-title">5. NOTIFICACIÓ DE VIOLACIONS DE SEGURETAT</h2>
+        <div class="data-card">
+            <p style="margin-top: 0;">Una violació de la seguretat de les dades és qualsevol incident que provoqui de forma accidental o il·lícita la destrucció, pèrdua, alteració o comunicació no autoritzada de dades personals.</p>
+            
+            <p style="font-weight: 600; margin-top: 15px;">El protocol d'actuació i els terminis estan taxats estrictament per llei:</p>
+            <div class="highlight-box">
+                <p><b>1. Notificació a l'Autoritat de Control (APDCAT):</b> El responsable del tractament ha de notificar la violació a l'APDCAT de manera immediata i, si és possible, en un termini màxim de <b>72 hores</b> des que en tingui constància. Si es fa més tard, s'ha de justificar el retard.</p>
+                <p><i>Excepció:</i> No cal notificar-ho si és improbable que la violació de seguretat constitueixi un risc per als drets i les llibertats de les persones físiques.</p>
+                <br>
+                <p><b>2. Comunicació a l'interessat (ciutadà):</b> Quan sigui probable que la violació de seguretat comporti un <b>alt risc</b> per als drets i llibertats dels afectats, el responsable la hi ha de comunicar directament en un llenguatge clar i senzill.</p>
+                <p><i>Excepció:</i> No és obligatori comunicar-ho al ciutadà si el responsable hagués adoptat mesures de protecció prèvies (com xifrar les dades de forma illegible) o si s'han pres mesures posteriors que garanteixin que l'alt risc ja no es materialitzarà.</p>
+            </div>
+        </div>
+
+        <footer class="custom-footer">
+            © 2026 OpoGene | Creat per JOMP
+        </footer>
+    </div>
+
+</body>
+</html>

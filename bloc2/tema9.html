@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 9: El Procediment Administratiu i els Interessats | C1 Generalitat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght=300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-body: #ffffff;
+            --bg-card: #f8fafc;
+            --gencat-red: #cc0000; /* Vermell oficial Generalitat */
+            --brand-dark: #0f172a;
+            --brand-black: #020617; /* Negre pur */
+            --text-main: #0f172a;
+            --text-dim: #475569;
+            --border: #e2e8f0;
+        }
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            font-family: 'Outfit', sans-serif;
+            padding: 20px;
+            line-height: 1.6;
+            margin: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .notes-container { max-width: 900px; margin: 0 auto; }
+
+        /* Capçalera: Recuadro negre amb marc superior vermell */
+        .mission-header {
+            background: var(--brand-black);
+            color: #ffffff;
+            padding: 35px;
+            border-radius: 0 0 16px 16px;
+            margin-bottom: 40px;
+            border-top: 6px solid var(--gencat-red);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .gencat-top-label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #94a3b8;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .mission-header h1 { 
+            font-size: 1.8rem; 
+            font-weight: 800; 
+            margin: 0; 
+            letter-spacing: -0.5px; 
+            color: #ffffff; 
+        }
+        
+        .inner-red-box {
+            background: var(--gencat-red);
+            color: #ffffff;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-size: 1rem;
+            font-weight: 400;
+            border-left: 4px solid #ffffff;
+        }
+
+        .section-title {
+            border-bottom: 2px solid var(--gencat-red);
+            color: var(--brand-black);
+            font-size: 1.25rem;
+            margin: 40px 0 20px;
+            padding-bottom: 6px;
+            text-transform: uppercase;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+        }
+
+        .data-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .important-list { list-style: none; padding: 0; margin: 0; }
+        .important-list li { 
+            background: white; 
+            margin-bottom: 10px; 
+            padding: 14px; 
+            border-radius: 8px; 
+            border-left: 4px solid var(--gencat-red);
+            font-size: 0.95rem;
+            border-top: 1px solid var(--border);
+            border-right: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .table-container { overflow-x: auto; margin-top: 15px; border-radius: 8px; border: 1px solid var(--border); }
+        .level-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; background: white; }
+        .level-table th { background: var(--brand-dark); color: white; padding: 12px; text-align: left; font-weight: 700; }
+        .level-table td { border-bottom: 1px solid var(--border); padding: 12px; color: var(--text-main); }
+        .level-table tr:last-child td { border-bottom: none; }
+
+        .highlight-box {
+            background: #fff5f5;
+            border: 1px solid #fca5a5;
+            border-left: 4px solid var(--gencat-red);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .highlight-box p { margin: 8px 0; font-size: 0.95rem; }
+
+        .btn-back {
+            display: inline-block;
+            text-decoration: none;
+            color: var(--text-dim);
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: color 0.2s;
+        }
+        .btn-back:hover { color: var(--gencat-red); }
+
+        .custom-footer {
+            text-align: center; 
+            margin-top: 60px; 
+            padding: 20px 0;
+            border-top: 1px solid var(--border);
+            font-size: 0.85rem; 
+            color: var(--text-dim); 
+            font-weight: 600;
+            letter-spacing: 0.3px;
+        }
+        
+        h3 { font-size: 1.05rem; margin: 15px 0 5px 0; color: var(--brand-dark); font-weight: 700; }
+    </style>
+</head>
+<body>
+
+    <div class="notes-container">
+        <a href="/index.html" class="btn-back">⬅ TORNAR AL LLISTAT</a>
+
+        <header class="mission-header">
+            <div class="gencat-top-label">Generalitat de Catalunya · Administració Pública (C1)</div>
+            <h1>TEMA 9: EL PROCEDIMENT ADMINISTRATIU I ELS INTERESSATS</h1>
+            
+            <div class="inner-red-box">
+                Les persones interessades en el procediment administratiu. Normes generals d'actuació. El procediment administratiu: fases, terminis, requisits dels actes administratius. Els drets de les persones interessades en un procediment administratiu.
+            </div>
+        </header>
+
+        <h2 class="section-title">1. LES PERSONES INTERESSADES I CAPACITAT D'OBRAR</h2>
+        <div class="data-card">
+            <p style="margin-top: 0;">La Llei 39/2015 regula qui té aptitud jurídica davant l'Administració. Cal distingir entre dos conceptes que es confonen sovint:</p>
+            
+            <h3>A. Capacitat d'obrar (Art. 3)</h3>
+            <p>La tenen, a més de les persones amb capacitat segons el dret civil:</p>
+            <ul class="important-list">
+                <li>Els <b>menors d'edat</b> per exercir els drets que l'ordenament els permeti sense assistència (ex: demanar una beca de batxillerat). S'exclouen expressament els menors emancipats per a supòsits restringits per llei.</li>
+                <li>Els grups d'afectats, unions sense personalitat i patrimonis独立 quan una llei ho declari expressament.</li>
+            </ul>
+
+            <h3>B. Concepte d'Interessat (Art. 4 - *Pregunta Fixa*)</h3>
+            <p>Es consideren interessats en un procediment concret:</p>
+            <ul class="important-list">
+                <li><b>Promotors:</b> Els qui el prorroguen o inicien com a titulars de drets o interessos legítims individuals o col·lectius.</li>
+                <li><b>Drets afectats:</b> Els qui, sense haver iniciat el procediment, tinguin drets que puguin resultar afectats per la decisió que s'hi adopti. *(S'han de personar o l'Administració els ha de cridar)*.</li>
+                <li><b>Interessos afectats:</b> Els qui tinguin interessos legítims i es personin en el procediment abans que es dicti la resolució definitiva.</li>
+            </ul>
+        </div>
+
+        <h2 class="section-title">2. NORMES GENERALS D'ACTUACIÓ I OBLIGACIÓ DIGITAL</h2>
+        <div class="data-card">
+            <p style="margin-top: 0;">L'<b>Art. 14</b> determina com ens hem de relacionar amb la Generalitat. El test sol preguntar de memòria qui està **obligat** al canal electrònic:</p>
+            
+            <div class="highlight-box">
+                <p><b>Persones físiques:</b> Tenen dret a <b>triar</b> en tot moment si es relacionen per mitjans electrònics o en paper. Poden modificar el canal escollit quan vulguin.</p>
+                <p><b>Obligats a relacionar-se electrònicament (Art. 14.2):</b></p>
+                <ul style="margin: 5px 0 0 20px; padding: 0; font-size: 0.9rem;">
+                    <li>Les persones jurídiques (societats, associacions).</li>
+                    <li>Les entitats sense personalitat jurídica.</li>
+                    <li>Els qui exerceixin una activitat professional que requereixi col·legiació obligatòria (advocats, enginyers, metges) per als tràmits derivats d'aquesta activitat.</li>
+                    <li>Els empleats de les administracions públiques per als tràmits interns per raó de la seva condició de funcionari.</li>
+                    <li>Els qui representin un interessat que estigui obligat a relacionar-se així.</li>
+                </ul>
+            </div>
+
+            <h3>Representació (Art. 5)</h3>
+            <p>Els interessats poden actuar per mitjà d'un representant. Per als actes de tràmit es presumeix la representació, però <b>es requereix acreditar-la obligatòriament (mitjançant poder notarial, apoderament "apud acta" o certificat digital)</b> per a:</p>
+            <ul class="important-list">
+                <li>Formular sol·licituds, presentar declaracions responsables o comunicacions, interposar recursos, desistir d'accions i renunciar a drets en nom de l'altre.</li>
+            </ul>
+        </div>
+
+        <h2 class="section-title">3. ELS TERMINIS ADMINISTRATIUS (CÒMPUT D'EXAMEN)</h2>
+        <div class="data-card">
+            <p style="margin-top: 0;">L'<b>Art. 30</b> estableix les regles de còmput. Les preguntes d'examen solen introduir calendaris pràctics amb festius:</p>
+            
+            <ul class="important-list">
+                <li><b>Dies hàbils:</b> Sempre que la llei o la norma no digui el contrari, els terminis s'entenen que són de dies hàbils. <b>S'exclouen del còmput els dissabtes, els diumenges i els dies declarats festius</b>. *(Ull: Els dissabtes són inhàbils a la Llei 39/2015, gran diferència amb el dret laboral o processal)*.</li>
+                <li><b>Dies naturals:</b> Només si una llei o el dret de la Unió Europea ho especifica. S'hi compten tots els dies de l'any sense excepció.</li>
+                <li><b>Inici del còmput:</b> Es compten a partir de <b>l'endemà (dia següent)</b> de la notificació o publicació de l'acte, o des de l'endemà de produir-se el silenci.</li>
+                <li><b>Terminis per mesos o anys:</b> Es computen de data a data. Si en el mes de venciment no hi ha dia equivalent (ex: notificat el 31 de gener en un termini d'un mes), el termini expira <b>l'últim dia del mes</b> (el 28 o 29 de febrer).</li>
+                <li><b>Dies inhàbils en destí:</b> Si un dia és hàbil al municipi de l'interessat però inhàbil a la seu de l'òrgan administratiu de destí (o a l'inrevés), es considera <b>inhàbil a tots els efectes</b> per al ciutadà.</li>
+            </ul>
+        </div>
+
+        <h2 class="section-title">4. FASES DEL PROCEDIMENT ADMINISTRATIU</h2>
+        <div class="data-card">
+            <p style="margin-top: 0;">El procediment és una successió temporal d'actes dret que consta de quatre fases principals:</p>
+
+            <div class="table-container">
+                <table class="level-table">
+                    <thead>
+                        <tr>
+                            <th>Fase del Procediment</th>
+                            <th>Aspectes clau clàssics d'Examen</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>1. Iniciació (Art. 54-69)</b></td>
+                            <td>Pot ser **d'ofici** (per acord de l'òrgan, ordre superior, petició d'altres òrgans o denúncia) o **a sol·licitud de l'interessat**. Si la sol·licitud del ciutadà té errors, l'Administració l'ha de requerir perquè esmeni la falta en un termini de <b>10 dies hàbils</b> (ampliables a 5 dies més, excepte procediments selectius).</td>
+                        </tr>
+                        <tr>
+                            <td><b>2. Ordenació (Art. 70-74)</b></td>
+                            <td>Es regeix pel principi d'impuls d'ofici en tots els seus tràmits. L'ordre de despatx dels expedients ha de seguir el criteri de **rigorós ordre de recepció** o incoació, llevat d'ordre motivat del titular.</td>
+                        </tr>
+                        <tr>
+                            <td><b>3. Instrucció (Art. 75-83)</b></td>
+                            <td>Fase per aportar les dades per a la decisió. Comprèn: **Al·legacions** (en qualsevol moment previ al tràmit d'audiència), **Proves** (període d'entre 10 i 30 dies si l'Administració no en té prou amb els fets), **Informes** (per defecte són facultatius i no vinculants, i s'han d'emetre en 10 dies), i el **Tràmit d'Audiència** (obligatori abans de redactar la proposta de resolució, termini d'entre 10 i 15 dies).</td>
+                        </tr>
+                        <tr>
+                            <td><b>4. Finalització (Art. 84-95)</b></td>
+                            <td>Posa fi al procediment de forma **normal (Resolució)** o **anormal** (desistiment, renúncia del dret, caducitat per paràlisi imputable al ciutadà durant 3 mesos, o impossibilitat material de continuar).</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <h2 class="section-title">5. REQUISITS DELS ACTES ADMINISTRATIUS (Art. 34-40)</h2>
+        <div class="data-card">
+            <p style="margin-top: 0;">Els actes administratius s'han de produir segons unes exigències formals i materials molt clares:</p>
+            <ul class="important-list">
+                <li><b>Forma:</b> Es dictaran normalment de forma escrita a través de mitjans electrònics, tret que la seva naturalesa exigeixi una forma diferent (verbal, senyals).</li>
+                <li><b>Motivació (Art. 35 - *Importantíssim*):</b> S'han de motivar de forma obligatòria (explicant els fets i fonaments de dret) aquells actes que: limitin drets subjectius, resolguin recursos, se separin del criteri seguit en antecedents o del dictamen d'òrgans consultius, acordin la inadmisió de tràmits o declarin la urgència del procediment.</li>
+                <li><b>Eficàcia (Art. 39):</b> Els actes administratius es presumeixen vàlids i **produeixen efectes des de la data en què es dicten**, excepte si la seva eficàcia queda demorada a la notificació, publicació o aprovació superior.</li>
+            </ul>
+        </div>
+
+        <h2 class="section-title">6. ELS DRETS DE LES PERSONES INTERESSADES (Art. 53)</h2>
+        <div class="data-card">
+            <p style="margin-top: 0;">Com a reforç de l'estudi (enllaçat amb el Tema 7), l'<b>interessat</b> gaudeix d'una protecció reforçada respecte del ciutadà comú:</p>
+            <ul class="important-list">
+                <li>Dret d'accés permanent a l'expedient i a obtenir còpia autèntica dels documents que en formen part.</li>
+                <li>Dret a utilitzar les llengües oficials a Catalunya d'acord amb la legislació vigent.</li>
+                <li>Dret a formular al·legacions i a aportar documents fins a l'últim moment possible abans del tràmit d'audiència, que han de ser tinguts en compte per l'òrgan instructor en redactar la proposta de resolució.</li>
+                <li>Dret a actuar assistits d'assessor si ho consideren oportú en les seves compareixences.</li>
+            </ul>
+        </div>
+
+        <footer class="custom-footer">
+            © 2026 OpoGene | Creat per JOMP
+        </footer>
+    </div>
+
+</body>
+</html>

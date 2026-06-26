@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 14: Registres i Oficines d'Assistència | C1 Generalitat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght=300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-body: #ffffff;
+            --bg-card: #f8fafc;
+            --gencat-red: #cc0000; /* Vermell oficial Generalitat */
+            --brand-dark: #0f172a;
+            --brand-black: #020617; /* Negre pur */
+            --text-main: #0f172a;
+            --text-dim: #475569;
+            --border: #e2e8f0;
+        }
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            font-family: 'Outfit', sans-serif;
+            padding: 20px;
+            line-height: 1.6;
+            margin: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .notes-container { max-width: 900px; margin: 0 auto; }
+
+        /* Capçalera: Recuadro negre amb marc superior vermell */
+        .mission-header {
+            background: var(--brand-black);
+            color: #ffffff;
+            padding: 35px;
+            border-radius: 0 0 16px 16px;
+            margin-bottom: 40px;
+            border-top: 6px solid var(--gencat-red);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .gencat-top-label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #94a3b8;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .mission-header h1 { 
+            font-size: 1.8rem; 
+            font-weight: 800; 
+            margin: 0; 
+            letter-spacing: -0.5px; 
+            color: #ffffff; 
+        }
+        
+        .inner-red-box {
+            background: var(--gencat-red);
+            color: #ffffff;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-size: 1rem;
+            font-weight: 400;
+            border-left: 4px solid #ffffff;
+        }
+
+        .section-title {
+            border-bottom: 2px solid var(--gencat-red);
+            color: var(--brand-black);
+            font-size: 1.25rem;
+            margin: 40px 0 20px;
+            padding-bottom: 6px;
+            text-transform: uppercase;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+        }
+
+        .data-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .important-list { list-style: none; padding: 0; margin: 0; }
+        .important-list li { 
+            background: white; 
+            margin-bottom: 10px; 
+            padding: 14px; 
+            border-radius: 8px; 
+            border-left: 4px solid var(--gencat-red);
+            font-size: 0.95rem;
+            border-top: 1px solid var(--border);
+            border-right: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .table-container { overflow-x: auto; margin-top: 15px; border-radius: 8px; border: 1px solid var(--border); }
+        .level-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; background: white; }
+        .level-table th { background: var(--brand-dark); color: white; padding: 12px; text-align: left; font-weight: 700; }
+        .level-table td { border-bottom: 1px solid var(--border); padding: 12px; color: var(--text-main); }
+        .level-table tr:last-child td { border-bottom: none; }
+
+        .highlight-box {
+            background: #fff5f5;
+            border: 1px solid #fca5a5;
+            border-left: 4px solid var(--gencat-red);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .highlight-box p { margin: 8px 0; font-size: 0.95rem; }
+
+        .btn-back {
+            display: inline-block;
+            text-decoration: none;
+            color: var(--text-dim);
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: color 0.2s;
+        }
+        .btn-back:hover { color: var(--gencat-red); }
+
+        .custom-footer {
+            text-align: center; 
+            margin-top: 60px; 
+            padding: 20px 0;
+            border-top: 1px solid var(--border);
+            font-size: 0.85rem; 
+            color: var(--text-dim); 
+            font-weight: 600;
+            letter-spacing: 0.3px;
+        }
+        
+        h3 { font-size: 1.05rem; margin: 15px 0 5px 0; color: var(--brand-dark); font-weight: 700; }
+    </style>
+</head>
+<body>
+
+    <div class="notes-container">
+        <a href="/index.html" class="btn-back">⬅ TORNAR AL LLISTAT</a>
+
+        <header class="mission-header">
+            <div class="gencat-top-label">Generalitat de Catalunya · Administració Pública (C1)</div>
+            <h1>TEMA 14: REGISTRES D'ENTRADA I SORTIDA I OFICINES D'ASSISTÈNCIA</h1>
+            
+            <div class="inner-red-box">
+                El registre electrònic únic, llocs de presentació de documents, funcionament de les Oficines d'Assistència en Matèria de Registres (OAMR) i el còmput de terminis.
+            </div>
+        </header>
+
+        <h2 class="section-title">1. EL REGISTRE ELECTRÒNIC ÚNIC (Art. 16 Llei 39/2015)</h2>
+        <div class="data-card">
+            <p style="margin-top: 0;">Cada Administració Pública disposa d'un **únic registre electrònic** general. A la Generalitat de Catalunya, aquest registre és totalment interoperable de forma interna i externa amb la resta del sector públic.</p>
+            
+            <ul class="important-list">
+                <li><b>Garantia d'assentament:</b> Tot document que es presenti davant la Generalitat (o que surti adreçat a una altra entitat) ha de quedar anotat mitjançant el corresponent assentament d'entrada o sortida.</li>
+                <li><b>Informació obligatòria de l'assentament:</b> Cada assentament ha de registrar necessàriament: un **número d'ordre correlatiu**, la **data i hora de presentació**, la **identificació de l'interessat**, un **resum del contingut** i la identificació de l'òrgan administratiu remitent (si escau) o de l'òrgan de destinació.</li>
+                <li><b>Emissió de rebut:</b> El sistema genera de forma automàtica i immediata un rebut electrònic que acredita la presentació de la sol·licitud, incloent-hi la còpia dels documents aportats.</li>
+            </ul>
+        </div>
+
+        <h2 class="section-title">2. LLOCS DE PRESENTACIÓ DE DOCUMENTS (*Pregunta Típica*)</h2>
+        <div class="data-card">
+            <p style="margin-top: 0;">L'article 16.4 de la Llei 39/2015 estableix amb caràcter taxatiu on pot un ciutadà no obligat presentar una sol·licitud de forma vàlida:</p>
+
+            <div class="table-container">
+                <table class="level-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 35%;">Llocs vàlids (Ciutadania)</th>
+                            <th>Regla d'Examen i Funcionament Pràctic</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>Registre electrònic de l'òrgan</b></td>
+                            <td>A la seu electrònica de l'Administració a la qual s'adreça (ex: Tràmits Gencat) o d'una altra Administració (principi d'interoperabilitat).</td>
+                        </tr>
+                        <tr>
+                            <td><b>Oficines de Correus</b></td>
+                            <td>S'han de presentar en format obert (procediment **ORVE/SIRI**). L'oficina postal digitalitza el document i el segella amb la data d'enviament, que té validesa legal a tots els efectes com a data d'entrada.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Oficines diplomàtiques / Consulars</b></td>
+                            <td>Per a tràmits de ciutadans que es troben a l'estranger. Es presenten a les ambaixades o oficines consulars d'Espanya.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Oficines d'Assistència (OAMR)</b></td>
+                            <td>Presencialment, a qualsevol de les oficines d'assistència en matèria de registres de la Generalitat o d'altres administracions públiques col·laboradores.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="highlight-box">
+                <p><b>⚠️ ATENCIÓ EXAMEN:</b> Les **persones obligades** a relacionar-se electrònicament (persones jurídiques, professionals col·legiats, etc.) <b>no tenen dret a triar llocs presencials</b>. Si presenten un document en paper o en una oficina física presencial, l'Administració els requerirà perquè en facin la **esmena per via electrònica**. La data de presentació es considerarà la del dia en què s'hagi fet l'esmena digital, no la del paper inicial.</p>
+            </div>
+        </div>
+
+        <h2 class="section-title">3. OFICINES D'ASSISTÈNCIA EN MATÈRIA DE REGISTRES (OAMR)</h2>
+        <div class="data-card">
+            <p style="margin-top: 0;">Les antigues oficines de registre presencial passen a ser oficines d'assistència per donar suport, especialment, a la ciutadania no obligada digitalment:</p>
+
+            <h3>A. Funcions Principals (Art. 16.5 de la Llei i Decret 76/2020)</h3>
+            <ul class="important-list">
+                <li><b>Digitalització i retorn:</b> Els documents en paper presentats per la ciutadania **han de ser digitalitzats** immediatament pel personal de l'oficina. La imatge digital es bolca al registre electrònic i **el document original en paper es torna immediatament al ciutadà**. L'Administració no es queda els originals en paper, excepte en casos molt taxats per llei.</li>
+                <li><b>Identificació i signatura electrònica:</b> Assistència en la generació d'idCAT Mòbil o signatures en nom del ciutadà mitjançant el sistema de funcionaris habilitats (amb consentiment exprés i escrit de l'interessat).</li>
+                <li><b>Emissió de còpies autèntiques:</b> Expedició de còpies digitals amb validesa jurídica a partir de documents originals en paper que aporti el ciutadà per a altres tràmits.</li>
+                <li><b>Inscripció d'apoderaments:</b> Suport presencial per inscriure poders al registre electrònic d'apoderaments de la Generalitat (<i>Representa</i>).</li>
+            </ul>
+        </div>
+
+        <h2 class="section-title">4. REGLES DE FUNCIONAMENT I CÒMPUT DE TERMINIS (Art. 31)</h2>
+        <div class="data-card">
+            <p style="margin-top: 0;">El registre electrònic es regeix per la data i hora oficial de la seu electrònica d'accés, i compta amb unes regles molt estrictes sobre els dies:</p>
+            
+            <ul class="important-list">
+                <li><b>Disponibilitat 24/7:</b> El registre electrònic està operatiu **tots els dies de l'any durant les 24 hores**.</li>
+                <li><b>La regla dels dies inhàbils:</b> La presentació en un dia inhàbil (ex: dissabte, diumenge o festiu oficial a Catalunya) s'entén efectuada **a la primera hora del primer dia hàbil següent**.</li>
+                <li><b>Doble assentament simultani:</b> El registre d'entrada deixarà constància de dues dates en aquests casos: la data real de la tramesa (ex: el diumenge a les 22:00h, que serveix per acreditar que el ciutadà ha complert un termini que vencia aquell dia) i la data d'efecte de la tramitació (el dilluns a les 00:00:01h, que és quan comença a comptar el termini que té la Generalitat per respondre).</li>
+                <li><b>Calendari de dies inhàbils:</b> La Generalitat de Catalunya fixa anualment al $DOGC$ el seu calendari de dies inhàbils per al còmput de terminis, el qual està lligat al calendari laboral oficial.</li>
+            </ul>
+        </div>
+
+        <footer class="custom-footer">
+            © 2026 OpoGene | Creat per JOMP
+        </footer>
+    </div>
+
+</body>
+</html>

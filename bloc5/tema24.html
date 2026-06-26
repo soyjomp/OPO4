@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 24: Treball al núvol i OneDrive | C1 Generalitat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght=300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-body: #ffffff;
+            --bg-card: #f8fafc;
+            --gencat-red: #cc0000;
+            --brand-dark: #0f172a;
+            --brand-black: #020617;
+            --text-main: #0f172a;
+            --text-dim: #475569;
+            --border: #e2e8f0;
+        }
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            font-family: 'Outfit', sans-serif;
+            padding: 20px;
+            line-height: 1.6;
+            margin: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .notes-container { max-width: 900px; margin: 0 auto; }
+
+        .mission-header {
+            background: var(--brand-black);
+            color: #ffffff;
+            padding: 35px;
+            border-radius: 0 0 16px 16px;
+            margin-bottom: 40px;
+            border-top: 6px solid var(--gencat-red);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .gencat-top-label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #94a3b8;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .mission-header h1 { font-size: 1.8rem; font-weight: 800; margin: 0; color: #ffffff; }
+        
+        .inner-red-box {
+            background: var(--gencat-red);
+            color: #ffffff;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-size: 1rem;
+            border-left: 4px solid #ffffff;
+        }
+
+        .section-title {
+            border-bottom: 2px solid var(--gencat-red);
+            color: var(--brand-black);
+            font-size: 1.25rem;
+            margin: 40px 0 20px;
+            padding-bottom: 6px;
+            text-transform: uppercase;
+            font-weight: 800;
+        }
+
+        .data-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .important-list { list-style: none; padding: 0; margin: 0; }
+        .important-list li { 
+            background: white; 
+            margin-bottom: 10px; 
+            padding: 14px; 
+            border-radius: 8px; 
+            border-left: 4px solid var(--gencat-red);
+            border: 1px solid var(--border);
+            font-size: 0.95rem;
+        }
+
+        .highlight-box {
+            background: #fff5f5;
+            border: 1px solid #fca5a5;
+            border-left: 4px solid var(--gencat-red);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .btn-back {
+            display: inline-block;
+            text-decoration: none;
+            color: var(--text-dim);
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            transition: color 0.2s;
+        }
+        .btn-back:hover { color: var(--gencat-red); }
+
+        .custom-footer {
+            text-align: center; 
+            margin-top: 60px; 
+            padding: 20px 0;
+            border-top: 1px solid var(--border);
+            font-size: 0.85rem; 
+            color: var(--text-dim); 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="notes-container">
+        <a href="/index.html" class="btn-back">⬅ TORNAR AL LLISTAT</a>
+
+        <header class="mission-header">
+            <div class="gencat-top-label">Generalitat de Catalunya · Transformació Digital (C1)</div>
+            <h1>TEMA 24: EL TREBALL AL NÚVOL I ONEDRIVE</h1>
+            
+            <div class="inner-red-box">
+                Concepte de Computació al Núvol (Cloud Computing), avantatges en l'entorn de la Generalitat i gestió documental corporativa mitjançant Microsoft OneDrive.
+            </div>
+        </header>
+
+        <h2 class="section-title">1. COMPUTACIÓ AL NÚVOL (CLOUD COMPUTING)</h2>
+        <div class="data-card">
+            <p>El núvol és el paradigma de prestació de serveis informàtics (emmagatzematge, bases de dades, programari) a través d'Internet, sense necessitat de tenir la infraestructura físicament en el propi ordinador.</p>
+            
+            <ul class="important-list">
+                <li><b>Avantatges per a l'Administració:</b> Accés des de qualsevol lloc (mobilitat), escalabilitat (capacitat d'augmentar recursos), i manteniment centralitzat i segur.</li>
+                <li><b>Seguretat i Protecció de Dades:</b> És vital recordar que en el núvol corporatiu de la Generalitat, el compliment del **RGPD (Reglament General de Protecció de Dades)** és innegociable. L'Administració manté el control de les dades mitjançant polítiques de seguretat definides (xifratge, control d'accés).</li>
+            </ul>
+        </div>
+
+        <h2 class="section-title">2. ONEDRIVE COM A EINA CORPORATIVA</h2>
+        <div class="data-card">
+            <p>OneDrive és el servei d'emmagatzematge al núvol de Microsoft, integrat en l'entorn corporatiu de la Generalitat. Es diferencia de l'espai d'emmagatzematge local de l'ordinador per les seves funcionalitats avançades:</p>
+            
+            <ul class="important-list">
+                <li><b>Sincronització:</b> Permet tenir una còpia de seguretat automàtica dels fitxers locals cap al núvol. Si canvies un fitxer des de l'ordinador, el canvi es reflecteix automàticament a totes les teves plataformes.</li>
+                <li><b>Treball col·laboratiu (coautoria):</b> És la funció estrella. Permet que diversos usuaris editin el **mateix document de Word, Excel o PowerPoint de forma simultània** i en temps real, eliminant la necessitat d'enviar versions "final_v2", "final_definitiu" per correu.</li>
+                <li><b>Historial de versions:</b> Permet recuperar versions anteriors d'un document si s'han produït errors o esborrats accidentals.</li>
+                <li><b>Gestió d'accés i compartició:</b> Es poden generar enllaços per compartir fitxers amb companys (definint si només poden llegir o també editar), evitant l'enviament massiu de fitxers adjunts per correu electrònic (alliberant la bústia).</li>
+            </ul>
+        </div>
+
+        <h2 class="section-title">3. ELEMENTS CLAU PER A L'EXAMEN</h2>
+        <div class="data-card">
+            <div class="highlight-box">
+                <p><b>⚠️ ATENCIÓ AMB LES RESPOSTES TRANYA:</b></p>
+                <p style="margin: 5px 0;"><b>1. OneDrive vs SharePoint:</b> OneDrive és per a fitxers <b>personals</b> de l'empleat. SharePoint és l'eina corporativa per a l'emmagatzematge de **tots els departaments** i equips (accés col·lectiu).</p>
+                <p style="margin: 5px 0;"><b>2. Accés des de la web:</b> Recorda que, encara que l'ordinador estigui apagat, pots accedir als teus fitxers mitjançant el portal web de Microsoft 365 (amb usuari i contrasenya corporatius), cosa que no seria possible amb un fitxer emmagatzemat només en el disc dur local.</p>
+                <p style="margin: 5px 0;"><b>3. Seguretat:</b> L'esborrat de fitxers a OneDrive passa primer per una "paperera de reciclatge" (d'on es pot recuperar) abans de la destrucció definitiva.</p>
+            </div>
+        </div>
+
+        <footer class="custom-footer">
+            © 2026 OpoGene | Creat per JOMP
+        </footer>
+    </div>
+
+</body>
+</html>

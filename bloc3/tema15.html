@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 15: Gestió Documental i Document Electrònic | C1 Generalitat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght=300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-body: #ffffff;
+            --bg-card: #f8fafc;
+            --gencat-red: #cc0000; /* Vermell oficial Generalitat */
+            --brand-dark: #0f172a;
+            --brand-black: #020617; /* Negre pur */
+            --text-main: #0f172a;
+            --text-dim: #475569;
+            --border: #e2e8f0;
+        }
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            font-family: 'Outfit', sans-serif;
+            padding: 20px;
+            line-height: 1.6;
+            margin: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .notes-container { max-width: 900px; margin: 0 auto; }
+
+        /* Capçalera: Recuadro negre amb marc superior vermell */
+        .mission-header {
+            background: var(--brand-black);
+            color: #ffffff;
+            padding: 35px;
+            border-radius: 0 0 16px 16px;
+            margin-bottom: 40px;
+            border-top: 6px solid var(--gencat-red);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .gencat-top-label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #94a3b8;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .mission-header h1 { 
+            font-size: 1.8rem; 
+            font-weight: 800; 
+            margin: 0; 
+            letter-spacing: -0.5px; 
+            color: #ffffff; 
+        }
+        
+        .inner-red-box {
+            background: var(--gencat-red);
+            color: #ffffff;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-size: 1rem;
+            font-weight: 400;
+            border-left: 4px solid #ffffff;
+        }
+
+        .section-title {
+            border-bottom: 2px solid var(--gencat-red);
+            color: var(--brand-black);
+            font-size: 1.25rem;
+            margin: 40px 0 20px;
+            padding-bottom: 6px;
+            text-transform: uppercase;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+        }
+
+        .data-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .important-list { list-style: none; padding: 0; margin: 0; }
+        .important-list li { 
+            background: white; 
+            margin-bottom: 10px; 
+            padding: 14px; 
+            border-radius: 8px; 
+            border-left: 4px solid var(--gencat-red);
+            font-size: 0.95rem;
+            border-top: 1px solid var(--border);
+            border-right: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .table-container { overflow-x: auto; margin-top: 15px; border-radius: 8px; border: 1px solid var(--border); }
+        .level-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; background: white; }
+        .level-table th { background: var(--brand-dark); color: white; padding: 12px; text-align: left; font-weight: 700; }
+        .level-table td { border-bottom: 1px solid var(--border); padding: 12px; color: var(--text-main); }
+        .level-table tr:last-child td { border-bottom: none; }
+
+        .highlight-box {
+            background: #fff5f5;
+            border: 1px solid #fca5a5;
+            border-left: 4px solid var(--gencat-red);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .highlight-box p { margin: 8px 0; font-size: 0.95rem; }
+
+        .btn-back {
+            display: inline-block;
+            text-decoration: none;
+            color: var(--text-dim);
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: color 0.2s;
+        }
+        .btn-back:hover { color: var(--gencat-red); }
+
+        .custom-footer {
+            text-align: center; 
+            margin-top: 60px; 
+            padding: 20px 0;
+            border-top: 1px solid var(--border);
+            font-size: 0.85rem; 
+            color: var(--text-dim); 
+            font-weight: 600;
+            letter-spacing: 0.3px;
+        }
+        
+        h3 { font-size: 1.05rem; margin: 15px 0 5px 0; color: var(--brand-dark); font-weight: 700; }
+    </style>
+</head>
+<body>
+
+    <div class="notes-container">
+        <a href="/index.html" class="btn-back">⬅ TORNAR AL LLISTAT</a>
+
+        <header class="mission-header">
+            <div class="gencat-top-label">Generalitat de Catalunya · Administració Pública (C1)</div>
+            <h1>TEMA 15: GESTIÓ DOCUMENTAL I DOCUMENTS ELECTRÒNICS</h1>
+            
+            <div class="inner-red-box">
+                El document electrònic i els seus components, l'expedient electrònic, el cicle de vida dels documents i les plataformes corporatives d'arxiu i preservació.
+            </div>
+        </header>
+
+        <h2 class="section-title">1. EL DOCUMENT ELECTRÒNIC I ELS SEUS COMPONENTS</h2>
+        <div class="data-card">
+            <p style="margin-top: 0;">Segons l'article 26 de la Llei 39/2015, un **document electrònic** és la informació de qualsevol naturalesa en forma electrònica, arxivada en un suport electrònic segons un format determinat i susceptible d'identificació i tractament diferenciat.</p>
+            
+            <div class="highlight-box" style="background: #fffbeb; border-color: #fef08a; border-left: 4px solid #eab308;">
+                <p><b>⚠️ PREGUNTA FIXA D'EXAMEN: Els 3 components obligatoris del document electrònic</b></p>
+                <p>Perquè un document electrònic administratiu sigui vàlid, ha de disposar necessàriament de:</p>
+                <ol style="margin: 5px 0; padding-left: 20px; font-size: 0.95rem;">
+                    <li><b>Contingut:</b> El text, les dades o la informació que componen el document.</li>
+                    <li><b>Metadades obligatòries:</b> Informació estructurada que descriu el context, el contingut i l'estructura del document (ex: identificador únic, data de creació, òrgan productor, tipus documental). Són indissociables del document.</li>
+                    <li><b>Signatura electrònica:</b> El sistema que garanteix l'autenticitat de l'autor i la integritat del contingut (que no ha estat modificat). Es realitza d'acord amb la regulació de signatura de les administracions.</li>
+                </ol>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. L'EXPEDIENT ELECTRÒNIC (Art. 70 Llei 39/2015)</h2>
+        <div class="data-card">
+            <p style="margin-top: 0;">L'expedient administratiu és el conjunt ordenat de documents i actuacions que serveixen de antecedent i fonament a la resolució administrativa. En l'entorn digital, l'expedient és **exclusivament electrònic**.</p>
+
+            <ul class="important-list">
+                <li><b>L'Índex Electrònic:</b> L'estructura de l'expedient es garanteix mitjançant un índex electrònic, que ha d'estar **signat per l'Administració** (òrgan o entitat actuant). Aquest índex garanteix la integritat de l'expedient i que no s'ha eliminat ni alterat cap document.</li>
+                <li><b>Remissió d'expedients:</b> Quan s'envia un expedient a un altre òrgan o al Tribunal Contenciós Administratiu, es transmet l'índex electrònic amb els documents associats, evitant duplicats físics.</li>
+            </ul>
+
+            <div class="highlight-box">
+                <p><b>⛔ QUÈ NO FORMA PART DE L'EXPEDIENT? (Pregunta trampa molt habitual)</b></p>
+                <p>No s'ha d'incloure en l'expedient electrònic la informació que tingui caràcter auxiliar o de suport, com ara: <b>esborranys</b>, notes, opinions, resums, comunicacions internes informals o <b>judicis de valor</b> emesos pels òrgans de gestió (tret que siguin informes preceptius o facultatius regulats pel procediment).</p>
+            </div>
+        </div>
+
+        <h2 class="section-title">3. CÒPIES AUTÈNTIQUES I DIGITALITZACIÓ (Art. 27)</h2>
+        <div class="data-card">
+            <p style="margin-top: 0;">El personal de l'escala C1 realitza diàriament tasques de compulsa o generació de còpies. Actualment la Llei demana parlar sempre de **còpia autèntica**:</p>
+
+            <div class="table-container">
+                <table class="level-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 30%;">Tipus de Còpia / Procés</th>
+                            <th>Requisits legals i mecanismes de validesa</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>Còpia d'Electrònic a Electrònic</b></td>
+                            <td>Tenen la consideració de còpies autèntiques les realitzades pels sistemes de l'Administració si les metadades de la còpia certifiquen que és idèntica al document origen.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Digitalització Segura (De Paper a Electrònic)</b></td>
+                            <td>Procés de passar un document paper a imatge digital. Perquè sigui còpia autèntica, el funcionari habilitat ha de garantir la fidelitat visual i signar el document digital resultant, inserint les metadades corresponents. El paper es torna al ciutadà.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Còpia en Paper d'un Electrònic</b></td>
+                            <td>Perquè un paper imprès tingui validesa de còpia autèntica, ha de portar imprès un **Codi Segur de Verificació (CSV)** o codi QR que permeti al ciutadà o a una altra entitat comprovar la seva integritat anant a la seu electrònica oficial de l'òrgan emissor.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <h2 class="section-title">4. EL CICLE DE VIDA DEL DOCUMENT I EINES CORPORATIVES</h2>
+        <div class="data-card">
+            <p style="margin-top: 0;">A la Generalitat, la gestió documental s'organitza de forma centralitzada per garantir la conservació i l'accés d'acord amb les següents fases i eines de l'AOC:</p>
+            
+            <h3>A. Les fases del Cicle de Vida</h3>
+            <p>Els documents passen de l'**arxiu de gestió** (mentre s'estan tramitant als departaments) a l'**arxiu central** i, finalment, després de l'avaluació de la *Comissió d'Accés i Avaluació Documental (CAAD)*, es determina si s'eliminen o es conserven de forma permanent a l'**arxiu històric** pel seu valor cultural o testimonial.</p>
+
+            <h3>B. Plataformes d'Arxiu de la Generalitat</h3>
+            <ul class="important-list">
+                <li><b>DESA'L:</b> El repositori o dipòsit central de documents i expedients electrònics de la Generalitat de Catalunya. Funciona com l'arxiu digital intermedi per guardar de forma segura tot el que es tramita.</li>
+                <li><b>iArxiu:</b> Plataforma del Consorci AOC dissenyada per a la **preservació a llarg termini** de documents electrònics. Garanteix que, tot i que els formats informàtics evolucionin o quedin obsolets (ex: canvis de PDF a nous formats futurs), els documents mantinguen la seva validesa legal i llegibilitat amb el pas dels anys.</li>
+                <li><b>ARESTA:</b> Sistema corporatiu d'intercanvi de registres i gestió d'expedients interns dins de l'estructura departamental de la Generalitat.</li>
+            </ul>
+        </div>
+
+        <footer class="custom-footer">
+            © 2026 OpoGene | Creat per JOMP
+        </footer>
+    </div>
+
+</body>
+</html>

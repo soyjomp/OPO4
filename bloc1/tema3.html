@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 3: Bon Govern i Transparència | C1 Generalitat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght=300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-body: #ffffff;
+            --bg-card: #f8fafc;
+            --gencat-red: #cc0000; /* Vermell oficial Generalitat */
+            --brand-dark: #0f172a;
+            --brand-black: #020617; /* Negre pur */
+            --text-main: #0f172a;
+            --text-dim: #475569;
+            --border: #e2e8f0;
+        }
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            font-family: 'Outfit', sans-serif;
+            padding: 20px;
+            line-height: 1.6;
+            margin: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .notes-container { max-width: 900px; margin: 0 auto; }
+
+        /* Capçalera: Recuadro negre amb marc superior vermell */
+        .mission-header {
+            background: var(--brand-black);
+            color: #ffffff;
+            padding: 35px;
+            border-radius: 0 0 16px 16px;
+            margin-bottom: 40px;
+            border-top: 6px solid var(--gencat-red);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .gencat-top-label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #94a3b8;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .mission-header h1 { 
+            font-size: 1.8rem; 
+            font-weight: 800; 
+            margin: 0; 
+            letter-spacing: -0.5px; 
+            color: #ffffff; 
+        }
+        
+        .inner-red-box {
+            background: var(--gencat-red);
+            color: #ffffff;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-size: 1rem;
+            font-weight: 400;
+            border-left: 4px solid #ffffff;
+        }
+
+        .section-title {
+            border-bottom: 2px solid var(--gencat-red);
+            color: var(--brand-black);
+            font-size: 1.25rem;
+            margin: 40px 0 20px;
+            padding-bottom: 6px;
+            text-transform: uppercase;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+        }
+
+        .data-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .important-list { list-style: none; padding: 0; margin: 0; }
+        .important-list li { 
+            background: white; 
+            margin-bottom: 10px; 
+            padding: 14px; 
+            border-radius: 8px; 
+            border-left: 4px solid var(--gencat-red);
+            font-size: 0.95rem;
+            border-top: 1px solid var(--border);
+            border-right: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .table-container { overflow-x: auto; margin-top: 15px; border-radius: 8px; border: 1px solid var(--border); }
+        .level-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; background: white; }
+        .level-table th { background: var(--brand-dark); color: white; padding: 12px; text-align: left; font-weight: 700; }
+        .level-table td { border-bottom: 1px solid var(--border); padding: 12px; color: var(--text-main); }
+        .level-table tr:last-child td { border-bottom: none; }
+
+        .highlight-box {
+            background: #fff5f5;
+            border: 1px solid #fca5a5;
+            border-left: 4px solid var(--gencat-red);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .highlight-box p { margin: 8px 0; font-size: 0.95rem; }
+
+        .btn-back {
+            display: inline-block;
+            text-decoration: none;
+            color: var(--text-dim);
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: color 0.2s;
+        }
+        .btn-back:hover { color: var(--gencat-red); }
+
+        .custom-footer {
+            text-align: center; 
+            margin-top: 60px; 
+            padding: 20px 0;
+            border-top: 1px solid var(--border);
+            font-size: 0.85rem; 
+            color: var(--text-dim); 
+            font-weight: 600;
+            letter-spacing: 0.3px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="notes-container">
+        <a href="/index.html" class="btn-back">⬅ TORNAR AL LLISTAT</a>
+
+        <header class="mission-header">
+            <div class="gencat-top-label">Generalitat de Catalunya · Administració Pública (C1)</div>
+            <h1>TEMA 3: BON GOVERN I TRANSPARÈNCIA</h1>
+            
+            <div class="inner-red-box">
+                Bon govern, transparència, govern obert i qualitat en els serveis públics.
+            </div>
+        </header>
+
+        <h2 class="section-title">1. MARCO LEGAL I GOVERN OBERT</h2>
+        <div class="data-card">
+            <p style="margin-top: 0; font-weight: 600;">La norma clau a Catalunya és la <b>Llei 19/2014, del 29 de desembre, de transparència, accés a la informació pública i bon govern</b>:</p>
+            <ul class="important-list">
+                <li><b>Govern Obert:</b> Model de relació entre l'Administració i la ciutadania basat en tres pilars conceptuals que pregunten sempre: <b>Transparència</b> (retiment de comptes), <b>Participació ciutadana</b> i <b>Col·laboració</b>.</li>
+                <li><b>Àmbit d'aplicació:</b> Vincula tota l'Administració de la Generalitat, el sector públic de salut/educació, ens locals, universitats i, a més, les entitats privades que reben subvencions públiques (per sobre d'uns llindars fixats per llei).</li>
+                <li><b>Bon Govern:</b> Principis que obliguen els alts càrrecs a actuar amb integritat, objectivitat i retiment de comptes. Inclou l'obligació d'adhesió a un **Codi de conducta** i la transparència de les seves agendes públiques i obsequis.</li>
+            </ul>
+        </div>
+
+        <h2 class="section-title">2. TRANSPARÈNCIA I PUBLICITAT ACTIVA</h2>
+        <div class="data-card">
+            <p style="margin-top: 0;">La publicitat activa és l'obligació de l'Administració de publicar d'ofici informació rellevant sense que ningú la demani, a través del <b>Portal de la Transparència</b>:</p>
+            <ul class="important-list">
+                <li><b>Informació institucional i organitzativa:</b> Funcions, organigrames, perfils professionals dels alts càrrecs, retribucions, indemnitzacions i obsequis rebuts.</li>
+                <li><b>Informació de rellevància jurídica:</b> Textos de les lleis, reglaments en tràmit, directrius, circulars i els dictàmens de la Comissió Jurídica Assessora.</li>
+                <li><b>Gestió econòmica i pressupostària:</b> Pressupostos aprovats, execució trimestral, auditories, contractes públics (objecte, import, licitadors), convenis signats i subvencions atorgades.</li>
+                <li><b>Dades Obertes (Open Data):</b> Tota la informació digital s'ha de posar a disposició del públic en formats oberts, reutilitzables i mecanitzables per permetre el seu lliure ús per part de tercers.</li>
+            </ul>
+        </div>
+
+        <h2 class="section-title">3. DRET D'ACCÉS A LA INFORMACIÓ PÚBLICA</h2>
+        <div class="data-card">
+            <p style="margin-top: 0;">Qualsevol persona de <b>més de 16 anys</b> pot sol·licitar accés a la informació elaborada o custodiada per l'Administració, sense necessitat de motivar la seva petició.</p>
+            
+            <p style="font-weight: 600; margin-top: 15px;">Límits i restriccions (Art. 21 i 23) — *Pregunta típica d'examen*:</p>
+            <div class="highlight-box" style="margin: 10px 0 20px 0;">
+                <p><b>Límits d'interès públic:</b> L'accés pot ser denegat o limitat si perjudica la seguretat pública, la investigació de delictes, la intimitat, el secret comercial o la propietat intel·lectual. S'aplica sempre el <b>test de proporcionalitat</b>.</p>
+                <p><b>Protecció de dades personals:</b> Si conté dades de caràcter reservat o sensibles (ideologia, salut, vida sexual, religió), l'accés es denega completament tret que hi hagi consentiment exprés per escrit.</p>
+            </div>
+
+            <div class="table-container">
+                <table class="level-table">
+                    <thead>
+                        <tr>
+                            <th>Concepte Clau</th>
+                            <th>Termini / Efecte jurídic de la Llei 19/2014</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>Termini general de resolució</b></td>
+                            <td>El termini màxim per dictar i notificar la resolució és de <b>1 mes</b> des de la recepció de la sol·licitud.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Pròrroga extraordinària</b></td>
+                            <td>Es pot prorrogar per un màxim de <b>15 dies hàbils més</b> si el volum o la complexitat de la informació ho requereix (notificant-ho abans del mes).</td>
+                        </tr>
+                        <tr>
+                            <td><b>Sentit del Silenci Administratiu</b></td>
+                            <td><b>Silenci Positiu (Estimatori):</b> Si passa el mes i no hi ha resolució expressa, la sol·licitud s'entén **estimada**, excepte si hi ha tercers afectats o xoca amb els límits de la llei.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Tràmit d'audiència a tercers</b></td>
+                            <td>Si la informació demana afecta drets de tercers interessats, se'ls dona un termini de <b>10 dies</b> per presentar al·legacions. El termini de resolució queda suspès.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <h2 class="section-title">4. RECLAMACIONS: LA GAIP</h2>
+        <div class="data-card">
+            <p style="margin-top: 0;"><b>La Comissió de Garantia del Dret d'Accés a la Informació Pública (GAIP):</b></p>
+            <ul class="important-list">
+                <li><b>Naturalesa:</b> Òrgan estatutari independent que vetlla pel compliment del dret d'accés. Les seves resolucions són **vinculants** per a l'Administració Pública.</li>
+                <li><b>El recurs:</b> Contra la denegació (expressa o per silenci) d'una sol·licitud d'accés, es pot presentar una reclamació davant la GAIP. Aquesta reclamació és **gratuïta i potestativa** (substitueix el recurs administratiu ordinari).</li>
+                <li><b>Termini de presentació:</b> <b>1 mes</b> des de la notificació de la denegació, o en qualsevol moment si es tracta de silenci administratiu.</li>
+            </ul>
+        </div>
+
+        <h2 class="section-title">5. QUALITAT EN ELS SERVEIS PÚBLICS</h2>
+        <div class="data-card">
+            <p style="margin-top: 0;">L'Administració ha d'assegurar un estàndard òptim en el servei al ciutadà mitjançant diferents eines estructurals:</p>
+            <ul class="important-list">
+                <li><b>Cartes de Serveis:</b> Documents públics on cada òrgan o departament informa els ciutadans sobre els serveis que presta, els **compromisos de qualitat** que assumeix (per exemple, temps màxim d'espera) i els drets de reparació si s'incompleixen.</li>
+                <li><b>Bústia de Queixes i Suggeriments:</b> Canal oficial perquè els ciutadans manifestin insatisfaccions pel funcionament dels serveis o proposin millores. L'Administració té l'obligació de respondre sempre (normalment en un termini màxim de 30 dies).</li>
+                <li><b>Avaluació contínua:</b> Ús d'enquestes de satisfacció i indicadors de rendiment per auditar l'eficiència dels tràmits i reformatar els processos interns sota criteris de simplificació administrativa.</li>
+            </ul>
+        </div>
+
+        <footer class="custom-footer">
+            © 2026 OpoGene | Creat per JOMP
+        </footer>
+    </div>
+
+</body>
+</html>
